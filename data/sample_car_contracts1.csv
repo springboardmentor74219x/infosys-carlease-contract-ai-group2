@@ -1,0 +1,21 @@
+id,customer_name,email_id,phone_no,contract_type,vehicle_type,monthly_emi,interest_rate,tenure_months,clause_summary,risk_flag,issue_type,recommended_action
+1,Arjun Mehta,arjun.mehta@example.com,9876543210,New Car Loan,Sedan,13450,8.5,60,Includes prepayment penalty clause; mandatory insurance bundle; lender audit rights,Low,None,No action needed; review terms annually
+2,Pooja Reddy,pooja.reddy@example.com,9123456780,Used Car Loan,Hatchback,8900,10.2,48,Warranty disclaimer clause; repossession clause with 14-day notice,Medium,Short notice period,Renegotiate notice duration to 30 days
+3,Rahul Sharma,rahul.sharma@example.com,9988776655,Electric Vehicle Loan,EV SUV,15200,7.8,72,Battery degradation liability unclear; high processing fee clause,High,Ambiguous liability,Clarify battery warranty with dealership
+4,Neha Kapoor,neha.kapoor@example.com,9090909090,Refinance Loan,Sedan,11200,9.1,36,Interest reset clause; floating rate adjustment every 6 months,Low,None,Monitor rate resets
+5,Vikram Singh,vikram.singh@example.com,9812345678,New Car Loan,Compact SUV,14500,8.2,60,Mandatory GPS installation; late fee escalation,Medium,Escalating charges,Limit late fee percentage
+6,Kavya Jain,kavya.jain@example.com,9001234567,Used Car Loan,Sedan,10200,11.5,48,Vehicle condition clause disputes; repossession without arbitration,High,Missing arbitration clause,Add arbitration/mediation clause
+7,Manish Rao,manish.rao@example.com,9098765432,Commercial Vehicle Loan,Mini Truck,18900,12.0,84,Commercial usage restrictions unclear; insurance burden fully on borrower,Medium,Unclear restrictions,Clarify commercial usage penalty
+8,Roshni Gupta,roshni.gupta@example.com,9944332211,Electric Vehicle Loan,EV Hatchback,12300,7.5,60,Charging station reimbursement ambiguous; installment break charges high,Medium,Ambiguous reimbursement,Negotiate reimbursement clause
+9,Ankit Verma,ankit.verma@example.com,9665544332,New Car Loan,Crossover SUV,16700,8.1,72,Cross-default clause with other loans; mandatory service center usage,High,Cross-default risk,Remove cross-default clause
+10,Sneha Nair,sneha.nair@example.com,9776655443,Used Car Loan,Hatchback,7800,10.9,36,Extended warranty invalidation; partial insurance requirement,Low,None,Suggest full coverage insurance
+11,Danish Khan,danish.khan@example.com,9123987654,Refinance Loan,Sedan,11800,9.0,48,Rate revision linked to external benchmark; foreclosure allowed,Low,None,Monitor benchmark fluctuations
+12,Ritika Sen,ritika.sen@example.com,9332211445,New Car Loan,Premium Sedan,24500,7.4,84,Luxury vehicle insurance add-on mandatory; severe penalty delays,High,High penalty charges,Cap maximum penalty %
+13,Karthik Iyer,karthik.iyer@example.com,9876501234,Commercial Vehicle Loan,Pickup Truck,20800,13.2,96,Driver liability clause unclear; accident claim restrictions tight,Medium,Unclear liability,Modify liability distribution
+14,Nisha Kulkarni,nisha.k@example.com,9988665544,Electric Vehicle Loan,EV Sedan,17500,8.0,72,Battery leasing clause; early termination penalty elevated,Medium,Penalty risks,Negotiate reduced termination fee
+15,Aman Patel,aman.patel@example.com,9554433221,New Car Loan,SUV,18400,7.9,60,Mandatory maintenance schedule; interest compounding monthly,Low,None,Add borrower flexibility for maintenance
+16,Harshini D,harshini.d@example.com,9009871234,Used Car Loan,Sedan,9300,11.2,48,Repossession clause without appeal; payment grace period short,High,No appeal process,Add appeal/arbitration mechanism
+17,Saurabh Das,saurabh.das@example.com,9111222334,Refinance Loan,Hatchback,8600,9.5,36,Conversion fee vague; processing charge high,Low,None,Refine fee disclosure
+18,Meera Joshi,meera.j@example.com,9766123451,New Car Loan,Sedan,13900,8.6,60,Top-up loan availability unclear; insurance coverage broad,Low,None,No action needed
+19,Devendra Rao,devendra.rao@example.com,9088776655,Commercial Vehicle Loan,Tempo Traveller,22500,12.5,96,Mileage penalty in fine print; seasonal rate adjustment,Medium,Hidden penalty,Make mileage clause transparent
+20,Aishwarya Pillai,aishwarya.p@example.com,9123344556,Electric Vehicle Loan,EV SUV,16800,7.7,84,Charging network dependency clause; downtime liability unclear,High,Ambiguous downtime liability,Define accountability between lender & EV provider
