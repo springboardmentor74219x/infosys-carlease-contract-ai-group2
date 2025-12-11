@@ -1,9 +1,21 @@
 id,sender,subject,body,priority,label
-1,hr@company.com,"Offer Letter - Please Sign","Dear Candidate, Congratulations! Please sign and upload your offer letter by today evening.",high,important
-2,noreply@shopping.com,"Big Billion Sale is Live","Flat 70% OFF on electronics. Limited period offer. Visit our store now.",low,promotion
-3,alerts@mybank.com,"Unusual Login Attempt","We detected a login attempt to your account from a new device. If this was not you, please reset your password.",high,security
-4,newsletter@blog.com,"Weekly Tech Newsletter","In this week's edition, learn about AI agents, LangGraph, and more.",low,newsletter
-5,friend123@gmail.com,"Coffee this weekend?","Hey, long time no see! Are you free this weekend for coffee?",medium,personal
-6,spam@strange-domain.ru,"You won $1,000,000!!!","Click here to claim your lottery now. Do not share this with anyone.",high,spam
-7,manager@company.com,"Project Update Required","Please share the status update of your project before 5 PM today.",high,work
-8,training@lms.com,"Reminder: Complete Mandatory Training","Your mandatory security awareness training is due tomorrow.",medium,work
+1,arjun.mehta@example.com,Request for EMI Clarification,"Hello Team, I need clarification regarding my EMI calculation for the new car loan sanctioned last month.",Medium,Query
+2,pooja.reddy@example.com,Complaint on Processing Fee,I was charged an additional processing fee that was not mentioned earlier. Please review my contract and assist.,High,Complaint
+3,rahul.sharma@example.com,Battery Warranty Concern,"Since my vehicle is an EV, I want clarity on the battery degradation policy stated in the contract.",Medium,Query
+4,neha.kapoor@example.com,Interest Rate Mismatch,The interest rate shown in the portal is different from the contract document I received yesterday.,High,Dispute
+5,vikram.singh@example.com,Request for Prepayment Information,Please share the exact charges and rules applicable if I prepay my loan early.,Low,Request
+6,kavya.jain@example.com,Disagreement on Repossession Clause,The repossession clause seems too strict and unclear. Kindly arrange a review meeting.,High,Complaint
+7,manish.rao@example.com,Commercial Usage Penalty Query,I drive a mini truck for dual personal & commercial use. What penalties apply?,Medium,Query
+8,roshni.gupta@example.com,Charging Reimbursement Clarification,My EV reimbursement claim for home charging was partially rejected. Please explain the criteria.,Medium,Query
+9,ankit.verma@example.com,Service Center Restriction Issue,"The contract forces me to use only the company's service centers, which is inconvenient.",Medium,Complaint
+10,sneha.nair@example.com,Insurance Upgrade Request,I want to upgrade my insurance from partial to full coverage. Please guide me.,Low,Request
+11,danish.khan@example.com,Foreclosure Eligibility,Kindly confirm whether I can foreclose my refinanced loan without penalties.,Medium,Query
+12,ritika.sen@example.com,Penalty Charges Too High,My luxury vehicle loan has extremely high late penalties. Please re-evaluate.,High,Complaint
+13,karthik.iyer@example.com,Driver Liability Clarification,"In my pickup truck contract, driver liabilities seem vague. Need detailed explanation.",Medium,Query
+14,nisha.k@example.com,Battery Lease Charges,Please verify the lease charges for my EV battery. They seem higher than market trends.,Medium,Query
+15,aman.patel@example.com,Maintenance Schedule Approval,Kindly confirm whether I can shift my maintenance schedule during relocation.,Low,Request
+16,harshini.d@example.com,Grace Period Issue,The grace period mentioned is too short. Please consider revising it.,High,Complaint
+17,saurabh.das@example.com,Processing Fee Doubt,Please explain the breakup of the processing fee charged in my refinance loan.,Medium,Query
+18,meera.j@example.com,Top-Up Loan Inquiry,Am I eligible to apply for a top-up loan on my existing car loan?,Low,Request
+19,devendra.rao@example.com,Mileage Penalty Explanation,My contract includes a mileage restriction I was unaware of. Please clarify.,High,Dispute
+20,aishwarya.p@example.com,Charging Network Downtime,"During downtime of EV charging stations, who bears the responsibility? Need clarification.",Medium,Query
