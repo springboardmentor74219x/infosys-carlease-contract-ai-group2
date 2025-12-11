@@ -1,0 +1,9 @@
+id,sender,apr_extracted,monthly_payment_extracted,term_extracted,rule_based_risk,label
+1,hr@company.com,,,,LOW,important
+2,noreply@shopping.com,,,,LOW,promotion
+3,alerts@mybank.com,,,,LOW,security
+4,newsletter@blog.com,,,,LOW,newsletter
+5,friend123@gmail.com,,,,LOW,personal
+6,spam@strange-domain.ru,,,,LOW,spam
+7,manager@company.com,,,,LOW,work
+8,training@lms.com,,,,LOW,work
