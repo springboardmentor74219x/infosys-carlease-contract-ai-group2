@@ -1,0 +1,126 @@
+contract_id,apr,monthly_payment,risk_flag,recommended_action
+1,10.49,959,Low,Approve
+2,3.78,804,Low,Approve
+3,5.41,774,High,Reject
+4,5.26,1028,High,Approve
+5,5.97,1180,Low,Approve
+6,6.99,818,High,Approve
+7,4.06,280,High,Reject
+8,4.9,246,Low,Review manually
+9,3.76,664,Medium,Approve
+10,10.88,823,High,Reject
+11,8.28,1147,Medium,Reject
+12,12.77,610,Low,Approve
+13,6.43,605,Medium,Approve
+14,11.81,964,Medium,Reject
+15,14.97,721,Low,Approve
+16,10.34,810,Medium,Review manually
+17,9.11,896,High,Reject
+18,10.51,500,Medium,Approve
+19,13.45,1195,Low,Reject
+20,10.49,356,High,Approve
+21,9.99,219,Medium,Review manually
+22,5.51,287,High,Approve
+23,10.75,471,High,Approve
+24,6.4,648,Low,Approve
+25,6.73,802,Low,Approve
+26,3.34,1080,High,Approve
+27,10.86,752,High,Reject
+28,5.54,1026,Low,Approve
+29,7.89,620,Low,Reject
+30,7.53,1019,Low,Approve
+31,8.11,387,Low,Review manually
+32,12.6,251,Low,Approve
+33,8.57,1085,Low,Approve
+34,14.82,1148,Medium,Review manually
+35,11.48,394,Low,Approve
+36,9.28,258,Medium,Reject
+37,9.14,1183,Low,Approve
+38,10.94,613,Low,Reject
+39,3.0,629,Low,Review manually
+40,5.82,887,Medium,Review manually
+41,8.23,275,Medium,Reject
+42,13.51,578,Medium,Approve
+43,6.28,883,Low,Reject
+44,3.94,960,Medium,Review manually
+45,11.47,903,Medium,Reject
+46,3.13,1049,Low,Approve
+47,4.14,365,High,Reject
+48,2.62,1167,Low,Reject
+49,9.41,330,Medium,Review manually
+50,5.13,882,High,Review manually
+51,11.87,1085,Medium,Approve
+52,11.71,1001,High,Reject
+53,4.49,591,Low,Review manually
+54,13.98,512,Low,Approve
+55,6.6,1190,High,Review manually
+56,10.99,1161,Medium,Approve
+57,14.53,239,Medium,Reject
+58,12.33,820,High,Review manually
+59,3.05,201,Medium,Review manually
+60,14.01,879,Medium,Reject
+61,10.84,612,Low,Reject
+62,10.81,893,High,Reject
+63,9.35,511,Medium,Approve
+64,10.68,652,Low,Reject
+65,12.42,874,High,Review manually
+66,3.67,888,Low,Approve
+67,3.08,825,Medium,Review manually
+68,11.48,706,Low,Approve
+69,13.26,997,Low,Approve
+70,3.13,1139,Low,Review manually
+71,9.14,1172,High,Reject
+72,12.88,1118,Medium,Reject
+73,11.9,984,Low,Reject
+74,3.47,440,Medium,Review manually
+75,4.23,592,Low,Reject
+76,7.59,625,Medium,Approve
+77,9.8,1077,Low,Review manually
+78,11.92,751,Low,Review manually
+79,8.57,544,Low,Reject
+80,14.76,1128,High,Reject
+81,10.53,1087,Low,Approve
+82,6.59,534,Medium,Review manually
+83,12.94,219,Low,Review manually
+84,14.47,972,Low,Approve
+85,4.4,684,Low,Reject
+86,5.7,371,Medium,Approve
+87,2.82,789,High,Review manually
+88,9.9,304,High,Reject
+89,14.8,555,Medium,Reject
+90,10.59,1069,Low,Review manually
+91,10.44,924,Low,Review manually
+92,5.88,676,High,Reject
+93,13.15,485,Medium,Approve
+94,10.85,229,Low,Review manually
+95,6.94,548,High,Reject
+96,2.63,287,Medium,Reject
+97,11.98,861,Low,Review manually
+98,5.27,513,High,Review manually
+99,7.82,560,Medium,Review manually
+100,4.01,523,High,Reject
+101,5.2,483,Low,Approve
+102,7.01,214,Low,Review manually
+103,6.15,853,Low,Approve
+104,8.37,548,Medium,Approve
+105,12.78,703,High,Reject
+106,4.36,287,High,Approve
+107,9.95,994,Medium,Review manually
+108,9.86,512,High,Reject
+109,5.1,470,Low,Approve
+110,3.44,618,High,Reject
+111,2.91,923,Medium,Reject
+112,5.42,1006,Low,Review manually
+113,10.6,1046,Low,Approve
+114,6.35,649,High,Review manually
+115,7.53,712,Low,Review manually
+116,13.62,818,Low,Approve
+117,12.95,983,Low,Reject
+118,8.99,1138,High,Approve
+119,12.68,681,Medium,Review manually
+120,3.81,537,Medium,Reject
+121,14.31,665,Medium,Review manually
+122,14.63,1085,High,Reject
+123,3.18,837,Medium,Reject
+124,5.84,1149,High,Review manually
+125,2.86,926,High,Review manually
