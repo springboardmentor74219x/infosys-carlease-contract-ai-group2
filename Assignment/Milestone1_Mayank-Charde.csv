@@ -1,0 +1,126 @@
+contract_id,raw_text,apr,term_months,monthly_payment,penalty_clause,recommended_action,risk_flag
+1,"This contract between Prime Auto and Emily Stone includes APR 10.49%, term 24 months, monthly payment $959, and None.",10.49,24,959,,Approve,Low
+2,"This contract between ABC Motors and Priya Sharma includes APR 3.78%, term 24 months, monthly payment $804, and Early termination fee $300.",3.78,24,804,Early termination fee $300,Approve,Low
+3,"This contract between DriveEasy Finance and Sara Lopez includes APR 5.41%, term 24 months, monthly payment $774, and Late fee $50.",5.41,24,774,Late fee $50,Reject,High
+4,"This contract between National Motors and Alex Kim includes APR 5.26%, term 48 months, monthly payment $1028, and Late fee $25.",5.26,48,1028,Late fee $25,Approve,High
+5,"This contract between National Motors and John Doe includes APR 5.97%, term 36 months, monthly payment $1180, and None.",5.97,36,1180,,Approve,Low
+6,"This contract between National Motors and Rahul Verma includes APR 6.99%, term 48 months, monthly payment $818, and None.",6.99,48,818,,Approve,High
+7,"This contract between CarHub Leasing and Rahul Verma includes APR 4.06%, term 60 months, monthly payment $280, and None.",4.06,60,280,,Reject,High
+8,"This contract between Prime Auto and David Chen includes APR 4.9%, term 24 months, monthly payment $246, and Late fee $50.",4.9,24,246,Late fee $50,Review manually,Low
+9,"This contract between CarHub Leasing and Priya Sharma includes APR 3.76%, term 48 months, monthly payment $664, and None.",3.76,48,664,,Approve,Medium
+10,"This contract between Prime Auto and Priya Sharma includes APR 10.88%, term 24 months, monthly payment $823, and Late fee $50.",10.88,24,823,Late fee $50,Reject,High
+11,"This contract between ABC Motors and Priya Sharma includes APR 8.28%, term 48 months, monthly payment $1147, and Late fee $50.",8.28,48,1147,Late fee $50,Reject,Medium
+12,"This contract between DriveEasy Finance and Emily Stone includes APR 12.77%, term 48 months, monthly payment $610, and None.",12.77,48,610,,Approve,Low
+13,"This contract between Prime Auto and Priya Sharma includes APR 6.43%, term 60 months, monthly payment $605, and Early termination fee $300.",6.43,60,605,Early termination fee $300,Approve,Medium
+14,"This contract between CarHub Leasing and Priya Sharma includes APR 11.81%, term 48 months, monthly payment $964, and Early termination fee $300.",11.81,48,964,Early termination fee $300,Reject,Medium
+15,"This contract between ABC Motors and Priya Sharma includes APR 14.97%, term 36 months, monthly payment $721, and Early termination fee $300.",14.97,36,721,Early termination fee $300,Approve,Low
+16,"This contract between DriveEasy Finance and Sara Lopez includes APR 10.34%, term 60 months, monthly payment $810, and Late fee $25.",10.34,60,810,Late fee $25,Review manually,Medium
+17,"This contract between CarHub Leasing and David Chen includes APR 9.11%, term 24 months, monthly payment $896, and Late fee $25.",9.11,24,896,Late fee $25,Reject,High
+18,"This contract between ABC Motors and Emily Stone includes APR 10.51%, term 24 months, monthly payment $500, and Early termination fee $300.",10.51,24,500,Early termination fee $300,Approve,Medium
+19,"This contract between CarHub Leasing and David Chen includes APR 13.45%, term 48 months, monthly payment $1195, and Late fee $50.",13.45,48,1195,Late fee $50,Reject,Low
+20,"This contract between DriveEasy Finance and John Doe includes APR 10.49%, term 36 months, monthly payment $356, and None.",10.49,36,356,,Approve,High
+21,"This contract between Prime Auto and John Doe includes APR 9.99%, term 60 months, monthly payment $219, and Late fee $25.",9.99,60,219,Late fee $25,Review manually,Medium
+22,"This contract between Prime Auto and Priya Sharma includes APR 5.51%, term 24 months, monthly payment $287, and Early termination fee $300.",5.51,24,287,Early termination fee $300,Approve,High
+23,"This contract between Prime Auto and Emily Stone includes APR 10.75%, term 36 months, monthly payment $471, and Early termination fee $300.",10.75,36,471,Early termination fee $300,Approve,High
+24,"This contract between Prime Auto and John Doe includes APR 6.4%, term 48 months, monthly payment $648, and Early termination fee $300.",6.4,48,648,Early termination fee $300,Approve,Low
+25,"This contract between ABC Motors and Priya Sharma includes APR 6.73%, term 36 months, monthly payment $802, and Late fee $50.",6.73,36,802,Late fee $50,Approve,Low
+26,"This contract between Prime Auto and Alex Kim includes APR 3.34%, term 24 months, monthly payment $1080, and None.",3.34,24,1080,,Approve,High
+27,"This contract between DriveEasy Finance and Sara Lopez includes APR 10.86%, term 36 months, monthly payment $752, and Late fee $50.",10.86,36,752,Late fee $50,Reject,High
+28,"This contract between ABC Motors and Emily Stone includes APR 5.54%, term 60 months, monthly payment $1026, and Early termination fee $300.",5.54,60,1026,Early termination fee $300,Approve,Low
+29,"This contract between ABC Motors and John Doe includes APR 7.89%, term 60 months, monthly payment $620, and Early termination fee $300.",7.89,60,620,Early termination fee $300,Reject,Low
+30,"This contract between Prime Auto and Rahul Verma includes APR 7.53%, term 48 months, monthly payment $1019, and Late fee $25.",7.53,48,1019,Late fee $25,Approve,Low
+31,"This contract between ABC Motors and Sara Lopez includes APR 8.11%, term 60 months, monthly payment $387, and None.",8.11,60,387,,Review manually,Low
+32,"This contract between Prime Auto and Sara Lopez includes APR 12.6%, term 24 months, monthly payment $251, and Late fee $25.",12.6,24,251,Late fee $25,Approve,Low
+33,"This contract between National Motors and John Doe includes APR 8.57%, term 36 months, monthly payment $1085, and Early termination fee $300.",8.57,36,1085,Early termination fee $300,Approve,Low
+34,"This contract between DriveEasy Finance and Emily Stone includes APR 14.82%, term 48 months, monthly payment $1148, and Early termination fee $300.",14.82,48,1148,Early termination fee $300,Review manually,Medium
+35,"This contract between DriveEasy Finance and Emily Stone includes APR 11.48%, term 36 months, monthly payment $394, and None.",11.48,36,394,,Approve,Low
+36,"This contract between DriveEasy Finance and David Chen includes APR 9.28%, term 48 months, monthly payment $258, and Late fee $25.",9.28,48,258,Late fee $25,Reject,Medium
+37,"This contract between DriveEasy Finance and John Doe includes APR 9.14%, term 24 months, monthly payment $1183, and Late fee $25.",9.14,24,1183,Late fee $25,Approve,Low
+38,"This contract between DriveEasy Finance and Rahul Verma includes APR 10.94%, term 36 months, monthly payment $613, and Late fee $25.",10.94,36,613,Late fee $25,Reject,Low
+39,"This contract between CarHub Leasing and Priya Sharma includes APR 3.0%, term 24 months, monthly payment $629, and None.",3.0,24,629,,Review manually,Low
+40,"This contract between ABC Motors and John Doe includes APR 5.82%, term 36 months, monthly payment $887, and None.",5.82,36,887,,Review manually,Medium
+41,"This contract between Prime Auto and Alex Kim includes APR 8.23%, term 24 months, monthly payment $275, and Late fee $50.",8.23,24,275,Late fee $50,Reject,Medium
+42,"This contract between DriveEasy Finance and Emily Stone includes APR 13.51%, term 36 months, monthly payment $578, and None.",13.51,36,578,,Approve,Medium
+43,"This contract between Prime Auto and Alex Kim includes APR 6.28%, term 24 months, monthly payment $883, and None.",6.28,24,883,,Reject,Low
+44,"This contract between DriveEasy Finance and Priya Sharma includes APR 3.94%, term 24 months, monthly payment $960, and Late fee $50.",3.94,24,960,Late fee $50,Review manually,Medium
+45,"This contract between CarHub Leasing and David Chen includes APR 11.47%, term 36 months, monthly payment $903, and None.",11.47,36,903,,Reject,Medium
+46,"This contract between CarHub Leasing and David Chen includes APR 3.13%, term 60 months, monthly payment $1049, and None.",3.13,60,1049,,Approve,Low
+47,"This contract between National Motors and Rahul Verma includes APR 4.14%, term 48 months, monthly payment $365, and Early termination fee $300.",4.14,48,365,Early termination fee $300,Reject,High
+48,"This contract between CarHub Leasing and Rahul Verma includes APR 2.62%, term 24 months, monthly payment $1167, and Late fee $50.",2.62,24,1167,Late fee $50,Reject,Low
+49,"This contract between ABC Motors and Alex Kim includes APR 9.41%, term 60 months, monthly payment $330, and Late fee $25.",9.41,60,330,Late fee $25,Review manually,Medium
+50,"This contract between National Motors and Rahul Verma includes APR 5.13%, term 36 months, monthly payment $882, and Late fee $25.",5.13,36,882,Late fee $25,Review manually,High
+51,"This contract between ABC Motors and Priya Sharma includes APR 11.87%, term 36 months, monthly payment $1085, and Late fee $50.",11.87,36,1085,Late fee $50,Approve,Medium
+52,"This contract between Prime Auto and Alex Kim includes APR 11.71%, term 48 months, monthly payment $1001, and Early termination fee $300.",11.71,48,1001,Early termination fee $300,Reject,High
+53,"This contract between Prime Auto and David Chen includes APR 4.49%, term 24 months, monthly payment $591, and Late fee $25.",4.49,24,591,Late fee $25,Review manually,Low
+54,"This contract between Prime Auto and Sara Lopez includes APR 13.98%, term 48 months, monthly payment $512, and Late fee $50.",13.98,48,512,Late fee $50,Approve,Low
+55,"This contract between DriveEasy Finance and Sara Lopez includes APR 6.6%, term 24 months, monthly payment $1190, and None.",6.6,24,1190,,Review manually,High
+56,"This contract between Prime Auto and Rahul Verma includes APR 10.99%, term 48 months, monthly payment $1161, and Late fee $25.",10.99,48,1161,Late fee $25,Approve,Medium
+57,"This contract between CarHub Leasing and Emily Stone includes APR 14.53%, term 48 months, monthly payment $239, and Late fee $25.",14.53,48,239,Late fee $25,Reject,Medium
+58,"This contract between Prime Auto and Alex Kim includes APR 12.33%, term 60 months, monthly payment $820, and Late fee $25.",12.33,60,820,Late fee $25,Review manually,High
+59,"This contract between ABC Motors and Emily Stone includes APR 3.05%, term 60 months, monthly payment $201, and Late fee $50.",3.05,60,201,Late fee $50,Review manually,Medium
+60,"This contract between DriveEasy Finance and Alex Kim includes APR 14.01%, term 48 months, monthly payment $879, and Late fee $25.",14.01,48,879,Late fee $25,Reject,Medium
+61,"This contract between Prime Auto and Sara Lopez includes APR 10.84%, term 48 months, monthly payment $612, and None.",10.84,48,612,,Reject,Low
+62,"This contract between CarHub Leasing and Sara Lopez includes APR 10.81%, term 60 months, monthly payment $893, and Late fee $50.",10.81,60,893,Late fee $50,Reject,High
+63,"This contract between DriveEasy Finance and Rahul Verma includes APR 9.35%, term 24 months, monthly payment $511, and None.",9.35,24,511,,Approve,Medium
+64,"This contract between DriveEasy Finance and Sara Lopez includes APR 10.68%, term 60 months, monthly payment $652, and Early termination fee $300.",10.68,60,652,Early termination fee $300,Reject,Low
+65,"This contract between DriveEasy Finance and Alex Kim includes APR 12.42%, term 36 months, monthly payment $874, and Late fee $25.",12.42,36,874,Late fee $25,Review manually,High
+66,"This contract between Prime Auto and John Doe includes APR 3.67%, term 36 months, monthly payment $888, and None.",3.67,36,888,,Approve,Low
+67,"This contract between DriveEasy Finance and Priya Sharma includes APR 3.08%, term 60 months, monthly payment $825, and Late fee $25.",3.08,60,825,Late fee $25,Review manually,Medium
+68,"This contract between ABC Motors and David Chen includes APR 11.48%, term 60 months, monthly payment $706, and Early termination fee $300.",11.48,60,706,Early termination fee $300,Approve,Low
+69,"This contract between DriveEasy Finance and Sara Lopez includes APR 13.26%, term 24 months, monthly payment $997, and Early termination fee $300.",13.26,24,997,Early termination fee $300,Approve,Low
+70,"This contract between National Motors and Emily Stone includes APR 3.13%, term 36 months, monthly payment $1139, and Late fee $25.",3.13,36,1139,Late fee $25,Review manually,Low
+71,"This contract between DriveEasy Finance and Sara Lopez includes APR 9.14%, term 48 months, monthly payment $1172, and Early termination fee $300.",9.14,48,1172,Early termination fee $300,Reject,High
+72,"This contract between National Motors and Alex Kim includes APR 12.88%, term 60 months, monthly payment $1118, and Late fee $50.",12.88,60,1118,Late fee $50,Reject,Medium
+73,"This contract between CarHub Leasing and Sara Lopez includes APR 11.9%, term 48 months, monthly payment $984, and Early termination fee $300.",11.9,48,984,Early termination fee $300,Reject,Low
+74,"This contract between DriveEasy Finance and John Doe includes APR 3.47%, term 48 months, monthly payment $440, and None.",3.47,48,440,,Review manually,Medium
+75,"This contract between ABC Motors and Sara Lopez includes APR 4.23%, term 36 months, monthly payment $592, and Late fee $50.",4.23,36,592,Late fee $50,Reject,Low
+76,"This contract between National Motors and David Chen includes APR 7.59%, term 60 months, monthly payment $625, and Late fee $25.",7.59,60,625,Late fee $25,Approve,Medium
+77,"This contract between CarHub Leasing and Alex Kim includes APR 9.8%, term 24 months, monthly payment $1077, and Early termination fee $300.",9.8,24,1077,Early termination fee $300,Review manually,Low
+78,"This contract between CarHub Leasing and Sara Lopez includes APR 11.92%, term 60 months, monthly payment $751, and Late fee $50.",11.92,60,751,Late fee $50,Review manually,Low
+79,"This contract between National Motors and Priya Sharma includes APR 8.57%, term 60 months, monthly payment $544, and Early termination fee $300.",8.57,60,544,Early termination fee $300,Reject,Low
+80,"This contract between ABC Motors and John Doe includes APR 14.76%, term 24 months, monthly payment $1128, and Early termination fee $300.",14.76,24,1128,Early termination fee $300,Reject,High
+81,"This contract between CarHub Leasing and Sara Lopez includes APR 10.53%, term 36 months, monthly payment $1087, and Early termination fee $300.",10.53,36,1087,Early termination fee $300,Approve,Low
+82,"This contract between National Motors and Alex Kim includes APR 6.59%, term 60 months, monthly payment $534, and None.",6.59,60,534,,Review manually,Medium
+83,"This contract between ABC Motors and David Chen includes APR 12.94%, term 60 months, monthly payment $219, and Late fee $25.",12.94,60,219,Late fee $25,Review manually,Low
+84,"This contract between ABC Motors and Rahul Verma includes APR 14.47%, term 24 months, monthly payment $972, and Late fee $25.",14.47,24,972,Late fee $25,Approve,Low
+85,"This contract between National Motors and Emily Stone includes APR 4.4%, term 36 months, monthly payment $684, and Late fee $25.",4.4,36,684,Late fee $25,Reject,Low
+86,"This contract between ABC Motors and Rahul Verma includes APR 5.7%, term 48 months, monthly payment $371, and Late fee $25.",5.7,48,371,Late fee $25,Approve,Medium
+87,"This contract between Prime Auto and John Doe includes APR 2.82%, term 48 months, monthly payment $789, and Early termination fee $300.",2.82,48,789,Early termination fee $300,Review manually,High
+88,"This contract between ABC Motors and David Chen includes APR 9.9%, term 36 months, monthly payment $304, and None.",9.9,36,304,,Reject,High
+89,"This contract between ABC Motors and Rahul Verma includes APR 14.8%, term 24 months, monthly payment $555, and Early termination fee $300.",14.8,24,555,Early termination fee $300,Reject,Medium
+90,"This contract between National Motors and Alex Kim includes APR 10.59%, term 24 months, monthly payment $1069, and Early termination fee $300.",10.59,24,1069,Early termination fee $300,Review manually,Low
+91,"This contract between DriveEasy Finance and Emily Stone includes APR 10.44%, term 60 months, monthly payment $924, and Late fee $50.",10.44,60,924,Late fee $50,Review manually,Low
+92,"This contract between CarHub Leasing and Alex Kim includes APR 5.88%, term 60 months, monthly payment $676, and Early termination fee $300.",5.88,60,676,Early termination fee $300,Reject,High
+93,"This contract between DriveEasy Finance and Rahul Verma includes APR 13.15%, term 24 months, monthly payment $485, and Early termination fee $300.",13.15,24,485,Early termination fee $300,Approve,Medium
+94,"This contract between National Motors and Priya Sharma includes APR 10.85%, term 48 months, monthly payment $229, and Early termination fee $300.",10.85,48,229,Early termination fee $300,Review manually,Low
+95,"This contract between CarHub Leasing and Rahul Verma includes APR 6.94%, term 48 months, monthly payment $548, and None.",6.94,48,548,,Reject,High
+96,"This contract between National Motors and Rahul Verma includes APR 2.63%, term 36 months, monthly payment $287, and Late fee $50.",2.63,36,287,Late fee $50,Reject,Medium
+97,"This contract between ABC Motors and Alex Kim includes APR 11.98%, term 60 months, monthly payment $861, and Early termination fee $300.",11.98,60,861,Early termination fee $300,Review manually,Low
+98,"This contract between DriveEasy Finance and Alex Kim includes APR 5.27%, term 36 months, monthly payment $513, and None.",5.27,36,513,,Review manually,High
+99,"This contract between CarHub Leasing and Priya Sharma includes APR 7.82%, term 48 months, monthly payment $560, and Early termination fee $300.",7.82,48,560,Early termination fee $300,Review manually,Medium
+100,"This contract between Prime Auto and Priya Sharma includes APR 4.01%, term 36 months, monthly payment $523, and Late fee $25.",4.01,36,523,Late fee $25,Reject,High
+101,"This contract between CarHub Leasing and Priya Sharma includes APR 5.2%, term 60 months, monthly payment $483, and None.",5.2,60,483,,Approve,Low
+102,"This contract between ABC Motors and Rahul Verma includes APR 7.01%, term 48 months, monthly payment $214, and Late fee $50.",7.01,48,214,Late fee $50,Review manually,Low
+103,"This contract between DriveEasy Finance and Alex Kim includes APR 6.15%, term 36 months, monthly payment $853, and Early termination fee $300.",6.15,36,853,Early termination fee $300,Approve,Low
+104,"This contract between National Motors and John Doe includes APR 8.37%, term 60 months, monthly payment $548, and Late fee $50.",8.37,60,548,Late fee $50,Approve,Medium
+105,"This contract between ABC Motors and Priya Sharma includes APR 12.78%, term 60 months, monthly payment $703, and Late fee $25.",12.78,60,703,Late fee $25,Reject,High
+106,"This contract between National Motors and Rahul Verma includes APR 4.36%, term 48 months, monthly payment $287, and Late fee $50.",4.36,48,287,Late fee $50,Approve,High
+107,"This contract between CarHub Leasing and David Chen includes APR 9.95%, term 36 months, monthly payment $994, and Early termination fee $300.",9.95,36,994,Early termination fee $300,Review manually,Medium
+108,"This contract between ABC Motors and David Chen includes APR 9.86%, term 60 months, monthly payment $512, and Late fee $25.",9.86,60,512,Late fee $25,Reject,High
+109,"This contract between Prime Auto and Rahul Verma includes APR 5.1%, term 36 months, monthly payment $470, and Late fee $25.",5.1,36,470,Late fee $25,Approve,Low
+110,"This contract between National Motors and Alex Kim includes APR 3.44%, term 24 months, monthly payment $618, and Early termination fee $300.",3.44,24,618,Early termination fee $300,Reject,High
+111,"This contract between ABC Motors and Emily Stone includes APR 2.91%, term 48 months, monthly payment $923, and None.",2.91,48,923,,Reject,Medium
+112,"This contract between DriveEasy Finance and Priya Sharma includes APR 5.42%, term 48 months, monthly payment $1006, and Late fee $50.",5.42,48,1006,Late fee $50,Review manually,Low
+113,"This contract between Prime Auto and David Chen includes APR 10.6%, term 48 months, monthly payment $1046, and Late fee $50.",10.6,48,1046,Late fee $50,Approve,Low
+114,"This contract between CarHub Leasing and Emily Stone includes APR 6.35%, term 48 months, monthly payment $649, and Late fee $25.",6.35,48,649,Late fee $25,Review manually,High
+115,"This contract between DriveEasy Finance and John Doe includes APR 7.53%, term 48 months, monthly payment $712, and Early termination fee $300.",7.53,48,712,Early termination fee $300,Review manually,Low
+116,"This contract between Prime Auto and Emily Stone includes APR 13.62%, term 48 months, monthly payment $818, and None.",13.62,48,818,,Approve,Low
+117,"This contract between Prime Auto and Sara Lopez includes APR 12.95%, term 24 months, monthly payment $983, and None.",12.95,24,983,,Reject,Low
+118,"This contract between National Motors and Emily Stone includes APR 8.99%, term 60 months, monthly payment $1138, and None.",8.99,60,1138,,Approve,High
+119,"This contract between CarHub Leasing and Emily Stone includes APR 12.68%, term 24 months, monthly payment $681, and None.",12.68,24,681,,Review manually,Medium
+120,"This contract between CarHub Leasing and Emily Stone includes APR 3.81%, term 36 months, monthly payment $537, and Early termination fee $300.",3.81,36,537,Early termination fee $300,Reject,Medium
+121,"This contract between CarHub Leasing and John Doe includes APR 14.31%, term 24 months, monthly payment $665, and Late fee $25.",14.31,24,665,Late fee $25,Review manually,Medium
+122,"This contract between National Motors and Sara Lopez includes APR 14.63%, term 60 months, monthly payment $1085, and Late fee $25.",14.63,60,1085,Late fee $25,Reject,High
+123,"This contract between ABC Motors and Priya Sharma includes APR 3.18%, term 48 months, monthly payment $837, and Early termination fee $300.",3.18,48,837,Early termination fee $300,Reject,Medium
+124,"This contract between National Motors and John Doe includes APR 5.84%, term 36 months, monthly payment $1149, and None.",5.84,36,1149,,Review manually,High
+125,"This contract between ABC Motors and Rahul Verma includes APR 2.86%, term 36 months, monthly payment $926, and Late fee $50.",2.86,36,926,Late fee $50,Review manually,High
