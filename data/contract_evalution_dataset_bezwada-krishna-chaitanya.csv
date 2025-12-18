@@ -1,0 +1,26 @@
+contract_text,expected_apr,expected_term,expected_payment,expected_penalty
+"This Car Loan Agreement offers an APR of 9.5% with a loan term of 60 months. The borrower agrees to pay a monthly installment of Rs. 18,500. A late payment penalty of Rs. 500 applies.",9.5,60,18500,"Late payment penalty Rs. 500"
+"The loan carries an annual percentage rate (APR) of 11%. Term is 48 months. Monthly payment is Rs. 21,200. No penalty clause is mentioned.",11,48,21200,null
+"APR applicable is 8.75%. The duration of this agreement is 36 months. Monthly EMI is Rs. 24,000. A penalty of 2% will be charged on overdue amounts.",8.75,36,24000,"2% overdue penalty"
+"This agreement has a tenure of 72 months with monthly payment of Rs. 16,300. No APR is specified. Late fee of Rs. 750 applies.",null,72,16300,"Late fee Rs. 750"
+"APR is fixed at 10.25% per annum. The borrower shall repay over 60 months. Monthly installment: Rs. 19,100. No penalties stated.",10.25,60,19100,null
+"Loan term is 24 months. Monthly payment is Rs. 32,000. A penalty clause of Rs. 1,000 for missed payments applies. APR not mentioned.",null,24,32000,"Penalty Rs. 1,000"
+"APR of this car loan is 12%. Term: 84 months. Monthly payment Rs. 14,900. Late payment attracts a 1.5% penalty.",12,84,14900,"1.5% late payment penalty"
+"This contract specifies an APR of 7.9% and a repayment period of 36 months. Monthly EMI Rs. 26,500. No penalty clause.",7.9,36,26500,null
+"The borrower agrees to pay Rs. 20,000 per month for 48 months. APR is 9%. Late payment penalty of Rs. 600 applies.",9,48,20000,"Late penalty Rs. 600"
+"APR is not disclosed. The loan term is 60 months with monthly payment of Rs. 18,900. No penalty information provided.",null,60,18900,null
+"This agreement includes an APR of 13.2%, tenure of 72 months, and monthly installment of Rs. 17,400. Penalty of Rs. 800 for late payments.",13.2,72,17400,"Late payment penalty Rs. 800"
+"APR: 8.5%. Monthly payment Rs. 22,700. Term not specified. No penalty mentioned.",8.5,null,22700,null
+"Loan tenure is 36 months and APR is 9.8%. Monthly EMI Rs. 25,100. Penalty clause not included.",9.8,36,25100,null
+"APR of 10%. Repayment over 48 months. Monthly payment Rs. 21,800. Late fee of Rs. 700 applies.",10,48,21800,"Late fee Rs. 700"
+"This car loan agreement mentions APR 11.75% and monthly payment Rs. 19,600. Term not stated. Penalty of 2% on overdue.",11.75,null,19600,"2% overdue penalty"
+"The borrower will repay the loan in 60 months with a monthly installment of Rs. 18,200. APR and penalty not specified.",null,60,18200,null
+"APR fixed at 6.9% for a term of 24 months. Monthly payment is Rs. 34,500. No penalties mentioned.",6.9,24,34500,null
+"APR is 14%. Loan term 96 months. Monthly EMI Rs. 13,800. Late payment penalty Rs. 1,200.",14,96,13800,"Late penalty Rs. 1,200"
+"This agreement specifies a monthly payment of Rs. 23,400 for 42 months. APR 9.3%. No penalty clause.",9.3,42,23400,null
+"APR is not applicable. Term is 36 months. Monthly payment Rs. 27,000. Penalty of Rs. 900 applies for late payment.",null,36,27000,"Late payment penalty Rs. 900"
+"APR of 10.9% with repayment period of 60 months. Monthly installment Rs. 19,300. No penalty mentioned.",10.9,60,19300,null
+"The loan carries an APR of 8.2% and a term of 48 months. Monthly payment Rs. 22,100. Penalty clause absent.",8.2,48,22100,null
+"APR 12.5%. Monthly EMI Rs. 20,700. Term 54 months. Late fee Rs. 650.",12.5,54,20700,"Late fee Rs. 650"
+"This car loan agreement mentions term of 72 months and monthly payment Rs. 16,800. APR and penalty not mentioned.",null,72,16800,null
+"APR is 9.6% per annum. Loan tenure 36 months. Monthly installment Rs. 25,800. Penalty of 1% on delayed payment.",9.6,36,25800,"1% delayed payment penalty"
