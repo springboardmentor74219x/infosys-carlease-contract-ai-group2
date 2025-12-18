@@ -1,4 +1,4 @@
-contract_id,raw_text,expected_apr,expected_term,expected_payment,expected_penalty
+contract_id,contract_text,expected_apr,expected_term,expected_payment,expected_penalty
 1,"This agreement includes APR 9.5%, tenure of 36 months, and a monthly payment of $450.",9.5,36,450,
 2,"The loan has a term of 48 months with a monthly payment of $620.",,48,620,
 3,"APR is fixed at 11.2% with monthly payment $780 and late payment penalty of $50.",11.2,,780,Late fee $50
