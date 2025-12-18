@@ -1,0 +1,29 @@
+contract_text,expected_apr,expected_term,expected_payment,expected_penalty
+"The loan agreement offers an APR of 8.5% for a term of 36 months. The borrower must pay $310 per month. A late payment penalty of $40 applies.",8.5,36,310,"Late payment penalty of $40"
+"This car loan has an APR of 7.9% with a repayment term of 48 months. The monthly payment is $275.",7.9,48,275,null
+"The borrower agrees to a loan term of 60 months with a monthly payment of $350. A penalty of 3% is charged on delayed payments.",null,60,350,"Penalty of 3% on delayed payments"
+"The agreement specifies a loan duration of 24 months.",null,24,null,null
+"In case of late payment, a fee of $100 will be imposed.",null,null,null,"Late fee of $100"
+"The loan carries an APR of 9.2%. Failure to pay on time will result in a $60 penalty.",9.2,null,null,"$60 penalty for late payment"
+"The vehicle loan is issued for 72 months at an APR of 10.1%. Monthly installments are $420. A penalty of $75 applies if payments are delayed.",10.1,72,420,"Penalty of $75 for delayed payment"
+"This agreement outlines a repayment period of 12 months with monthly payments of $500.",null,12,500,null
+"The borrower must repay the loan over 84 months. Late payments will attract a penalty of 5%.",null,84,null,"Penalty of 5% on late payment"
+"The car loan is offered at an APR of 6.8% for a duration of 36 months.",6.8,36,null,null
+"The monthly payment under this agreement is $290. A late payment charge of $50 is applicable.",null,null,290,"Late payment charge of $50"
+"This loan agreement specifies an APR of 11.3% and a repayment term of 48 months. The monthly installment is $365.",11.3,48,365,null
+"The borrower agrees to pay $410 every month for 60 months. A late fee of $90 will be charged if payment is missed.",null,60,410,"Late fee of $90"
+"The loan has an APR of 8.0% and must be repaid over 24 months. Monthly payments are fixed at $450. A penalty of $30 applies for late payment.",8.0,24,450,"Penalty of $30 for late payment"
+"This contract mentions a repayment term of 18 months.",null,18,null,null
+"The borrower is required to pay a monthly amount of $260 for 36 months.",null,36,260,null
+"The loan carries an APR of 9.7% with a monthly payment of $340. A late payment penalty of $55 applies.",9.7,null,340,"Late payment penalty of $55"
+"This car loan agreement has a duration of 48 months and includes a penalty of $80 for delayed payments.",null,48,null,"Penalty of $80 for delayed payment"
+"The agreement offers an APR of 7.5% for a term of 60 months.",7.5,60,null,null
+"The borrower must pay $390 per month. Failure to do so will result in a penalty of $70.",null,null,390,"Penalty of $70"
+"The loan is provided at an APR of 10.5% and must be repaid in 72 months. Monthly installments are $430.",10.5,72,430,null
+"This contract specifies a loan term of 30 months with an APR of 8.9%. A late fee of $45 applies.",8.9,30,null,"Late fee of $45"
+"The borrower agrees to monthly payments of $510 over a period of 24 months. A penalty of 4% applies for late payment.",null,24,510,"Penalty of 4% on late payment"
+"The loan has an APR of 6.5% and a repayment duration of 48 months. The monthly payment is $295.",6.5,48,295,null
+"This agreement includes a monthly payment of $360 and a penalty of $65 for delayed payment.",null,null,360,"Penalty of $65"
+"The car loan is issued for a term of 90 months.",null,90,null,null
+"The loan agreement specifies an APR of 9.9%. The borrower must pay $385 per month for 60 months. A late fee of $85 applies.",9.9,60,385,"Late fee of $85"
+"The borrower is subject to a penalty of $120 in case of late payment.",null,null,null,"Penalty of $120"
