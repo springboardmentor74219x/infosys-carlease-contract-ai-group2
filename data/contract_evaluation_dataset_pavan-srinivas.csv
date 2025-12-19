@@ -1,4 +1,4 @@
-contract_id,contract_text,expected_apr,expected_term,expected_payment,expected_penalty
+contract_id,contract_text,expected_apr,expected_term,expected_monthly_payment,expected_penalty
 1,"This contract is entered between Prime Auto Finance and Rahul Mehta. The loan carries an APR of 9.75% for a term of 36 months. The borrower agrees to pay a monthly installment of $825. A late payment fee of $50 will be charged.",9.75,36,825,late payment fee of $50
 
 2,"This leasing agreement between ABC Motors and Neha Singh offers financing at an APR of 6.2% for a duration of 48 months. The monthly payment amount is $640.",6.2,48,640,
