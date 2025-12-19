@@ -1,0 +1,31 @@
+contract_id,contract_text,expected_apr,expected_term,expected_payment,expected_penalty
+1,"The borrower agrees to an APR of 12%. The loan term is 24 months with a monthly payment of 4500. Late payment will attract a penalty of 200.","12","24","4500","late fee 200"
+2,"This agreement offers a loan at an APR of 10.5% for a duration of 36 months. Monthly installment is 3200.","10.5","36","3200",
+3,"A personal loan with a term of 18 months. Monthly payment shall be 5200. No penalty clause is mentioned.",,"18","5200",
+4,"The customer will pay 4100 every month for 12 months. APR applicable is 14%. A late fee penalty of 150 applies.","14","12","4100","late fee 150"
+5,"Loan sanctioned with APR of 9%. Penalty of 300 will be charged for missed payments.","9",,,"missed payment fee 300"
+6,"This contract states a monthly payment of 6000 over 48 months.",,"48","6000",
+7,"APR is fixed at 11%. Term of loan is 30 months. Monthly payment is 3800. Penalty charges apply.","11","30","3800",
+8,"The borrower must repay in 20 months with a monthly payment of 2900.",,"20","2900",
+9,"Loan agreement with APR 13.5% and term of 36 months. Monthly installment is 4200. Late penalty is 250.","13.5","36","4200","late fee 250"
+10,"The term is 60 months and APR is 8.75%.","8.75","60",,
+11,"Monthly payment agreed is 5100. Penalty of 100 applies for delay.",,,"5100","late fee 100"
+12,"This loan carries an APR of 15% for 12 months with monthly payment of 4700.","15","12","4700",
+13,"Borrower agrees to pay 3400 monthly for a period of 24 months.",,"24","3400",
+14,"APR is 10%. Monthly installment is 3600. Penalty clause is not applicable.","10",,"3600",
+15,"Loan term of 40 months. Late payment penalty of 500 applies.",,"40",,"late fee 500"
+16,"The agreement specifies APR of 7.5% and a monthly payment of 2800 for 36 months.","7.5","36","2800",
+17,"Customer will repay the amount in monthly installments of 6200.",,,"6200",
+18,"APR is mentioned as 16%. Penalty of 200 applies on late payment.","16",,,"late fee 200"
+19,"Loan tenure is 18 months with a monthly payment of 3900.",,"18","3900",
+20,"The borrower agrees to an APR of 11.25% with monthly payment of 4550 over 24 months. Late fee is 180.","11.25","24","4550","late fee 180"
+21,"Monthly payment is 5000 for a term of 10 months.",,"10","5000",
+22,"This contract includes a penalty clause of 350.",,,,"penalty fee 350"
+23,"APR of 9.8% applies. Monthly payment is 3100.","9.8",,"3100",
+24,"The loan will run for 72 months. Penalty applies for late payment.",,"72",,
+25,"APR fixed at 12.6%, term is 36 months, monthly installment is 4100, penalty of 220 applicable.","12.6","36","4100","late fee 220"
+26,"APR is 6.5%. Monthly payment is 2600 for 24 months.","6.5","24","2600",
+27,"Term is 15 months. Monthly payment is 3600.",,"15","3600",
+28,"APR is 13%. Early termination penalty of 400 applies.","13",,,"early termination fee 400"
+29,"Monthly payment is 4800 for 20 months.",,"20","4800",
+30,"APR is 14.2%. Term is 48 months. Early closure fee of 600 applies.","14.2","48",,"early termination fee 600"
