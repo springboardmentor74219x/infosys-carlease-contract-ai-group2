@@ -1,0 +1,26 @@
+contract_id,contract_text,expected_apr,expected_term,expected_payment,expected_penalty
+1,"This agreement includes APR 9.5%, tenure of 36 months, and a monthly payment of $450.",9.5,36,450,
+2,"The loan has a term of 48 months with a monthly payment of $620.",,48,620,
+3,"APR is fixed at 11.2% with monthly payment $780 and late payment penalty of $50.",11.2,,780,Late fee $50
+4,"Customer agrees to a 24 month contract with APR 6.8%.",6.8,24,,
+5,"Monthly installment shall be $510 for a period of 60 months.",,60,510,
+6,"APR 10.5%, tenure 36 months, early termination fee $300 applies.",10.5,36,,Early termination fee $300
+7,"This lease requires monthly payment of $275.",,,275,
+8,"Loan includes APR 7.9% and late fee $25 if payment is delayed.",7.9,, ,Late fee $25
+9,"Contract duration is 48 months. No penalty clause mentioned.",,48,,
+10,"APR 12.3% applies with monthly EMI $890 for 24 months.",12.3,24,890,
+11,"The agreement mentions an early termination fee of $400.",,,,Early termination fee $400
+12,"Monthly payment of $650 applies for 36 months with APR 8.1%.",8.1,36,650,
+13,"APR is not mentioned but monthly payment is $540.",,,540,
+14,"This contract has a tenure of 72 months and APR 9.75%.",9.75,72,,
+15,"Monthly payment $315 with late fee $30 if delayed.",,,315,Late fee $30
+16,"APR 13.4%, term 48 months, monthly payment $1020, penalty $75.",13.4,48,1020,Penalty $75
+17,"Customer will pay $410 monthly for a 36 month duration.",,36,410,
+18,"APR 5.9% with no penalties mentioned.",5.9,,,
+19,"The loan is valid for 24 months with payment $990 and late fee $40.",,24,990,Late fee $40
+20,"APR 10.1%, monthly payment $575.",10.1,,575,
+21,"Contract includes tenure of 60 months.",,60,,
+22,"APR 14.6% applies with early termination charge $500.",14.6,,,Early termination fee $500
+23,"Monthly installment fixed at $820 for 48 months.",,48,820,
+24,"This agreement specifies APR 6.2% only.",6.2,,,
+25,"APR 11.8%, tenure 36 months, EMI $690, late fee $25.",11.8,36,690,Late fee $25
