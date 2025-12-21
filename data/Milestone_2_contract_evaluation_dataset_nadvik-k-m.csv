@@ -1,0 +1,60 @@
+contract_id,contract_text,expected_apr,expected_term,expected_monthly_payment,expected_penalty
+1,"This contract is entered between Prime Auto Finance and Rahul Mehta. The loan carries an APR of 9.75% for a term of 36 months. The borrower agrees to pay a monthly installment of $825. A late payment fee of $50 will be charged.",9.75,36,825,late payment fee of $50
+
+2,"This leasing agreement between ABC Motors and Neha Singh offers financing at an APR of 6.2% for a duration of 48 months. The monthly payment amount is $640.",6.2,48,640,
+
+3,"This agreement is signed between DriveEasy Leasing and Arjun Patel. The lease duration is 24 months with a monthly payment of $510. An early termination fee of $300 applies.",,24,510,early termination fee of $300
+
+4,"This auto loan contract between National Motors and John Doe includes an APR of 11.4% and a term of 60 months. Monthly payment is $940.",11.4,60,940,
+
+5,"The contract between CarHub Leasing and Priya Sharma states a monthly payment of $720 for 36 months. A penalty of $25 applies for late payments.",,36,720,late payment fee of $25
+
+6,"This loan agreement between AutoCredit Ltd and Suresh Kumar specifies an APR of 8.9% with a repayment term of 24 months. The monthly payment is $560. A late payment penalty of $40 applies.",8.9,24,560,late payment penalty of $40
+
+7,"This financing contract is made between Velocity Motors and Ananya Rao. The borrower agrees to a term of 48 months with a monthly installment of $610.",,48,610,
+
+8,"This agreement between SpeedDrive Finance and Rohit Verma includes an APR of 10.5%. The contract duration is 36 months.",10.5,36,,
+
+9,"This lease contract signed by Urban Auto and Kavya Nair states a monthly payment of $495 for a term of 18 months. A penalty of $200 applies for early termination.",,18,495,early termination fee of $200
+
+10,"This auto loan document between Prime Wheels and Aman Gupta specifies an APR of 7.8% and a monthly payment of $710. The loan tenure is 60 months.",7.8,60,710,
+
+11,"This agreement between CityCar Finance and Sneha Iyer confirms a loan term of 12 months. No other financial details are specified.",,12,,
+
+12,"This vehicle finance contract between RoadMax Ltd and Vikram Singh carries an APR of 9.1% for a duration of 36 months. Monthly payment is $680. A late payment charge of $35 will be imposed.",9.1,36,680,late payment charge of $35
+
+13,"This leasing agreement entered by AutoLease Corp and Pooja Malhotra mentions a lease period of 48 months with a monthly installment of $590.",,48,590,
+
+14,"This loan contract between DriveNow Finance and Karan Joshi specifies an APR of 12.3% for a term of 24 months. Monthly payment amounts to $830.",12.3,24,830,
+
+15,"This contract between Swift Motors and Riya Banerjee states that a penalty of $60 applies in case of delayed payments.",,,,late payment penalty of $60
+
+16,"This auto financing agreement between National Auto Loans and Deepak Mishra includes a repayment term of 72 months and a monthly payment of $890.",,72,890,
+
+17,"This agreement between MetroCar Leasing and Ankit Shah specifies an APR of 6.9% with a lease duration of 36 months. Monthly payment is $520.",6.9,36,520,
+
+18,"This vehicle loan document between SpeedTrack Finance and Nidhi Kapoor states a term of 48 months. A foreclosure penalty of $400 applies.",,48,,foreclosure penalty of $400
+
+19,"This financing contract between Apex Auto and Mohit Agarwal includes an APR of 11.1% and a monthly installment of $760.",11.1,,760,
+
+20,"This leasing agreement between AutoFlex Ltd and Simran Kaur specifies a lease term of 24 months and a monthly payment of $455. An early exit fee of $250 is applicable.",,24,455,early exit fee of $250
+
+21,"This loan agreement between PrimeDrive Finance and Abhishek Jain mentions an APR of 8.4% for a term of 60 months. Monthly payment is $705.",8.4,60,705,
+
+22,"This contract entered by CityWheels and Isha Khanna specifies a monthly payment of $640. No other loan terms are stated.",,,640,
+
+23,"This auto loan contract between RoadRunner Finance and Sanjay Patel carries an APR of 9.9% with a tenure of 36 months. A late fee of $45 applies.",9.9,36,,late fee of $45
+
+24,"This agreement between DriveSmart Leasing and Mehul Desai states a lease duration of 12 months with a monthly installment of $390.",,12,390,
+
+25,"This vehicle finance contract between AutoLine Credit and Tanya Arora includes an APR of 7.2% and a term of 48 months. Monthly payment is $615. A penalty of $30 applies for late payments.",7.2,48,615,late payment penalty of $30
+
+26,"This loan agreement between UrbanRide Finance and Harish Rao specifies a repayment term of 36 months.",,36,,
+
+27,"This contract between FastLane Motors and Nikita Verma includes an APR of 10.8%. A penalty of $500 applies for early termination.",10.8,,,early termination fee of $500
+
+28,"This auto lease agreement between CarEase Ltd and Rahul Nanda states a monthly payment of $575 for 30 months.",,30,575,
+
+29,"This financing document between MegaAuto Finance and Shalini Ghosh specifies an APR of 6.5% with a loan term of 24 months. Monthly installment is $485.",6.5,24,485,
+
+30,"This agreement between Highway Auto Loans and Prateek Malhotra mentions a late payment penalty of $55. No other financial details are provided.",,,,late payment penalty of $55
