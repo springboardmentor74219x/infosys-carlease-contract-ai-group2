@@ -1,0 +1,28 @@
+contract_id,contract_text,expected_apr,expected_term,expected_payment,expected_penalty
+1,"This car financing agreement specifies an annual percentage rate of 9.5% with a repayment period of 48 months. The borrower is required to pay ₹18,500 each month. Late payments will incur a penalty.",9.5,48,18500,yes
+2,"This lease arrangement is set for a duration of 36 months, with a fixed monthly charge of ₹22,000. The agreement does not include any penalty conditions.",,36,22000,no
+3,"Under this loan offer, the interest rate is fixed at 8.75% and the repayment spans 60 months. The monthly installment amount is ₹19,200.",8.75,60,19200,no
+4,"The borrower agrees to make monthly payments of ₹15,000 for a total period of 24 months. Any delay in payment will result in a penalty charge.",,24,15000,yes
+5,"This loan contract carries an APR of 10.2% and extends over 48 months. The monthly repayment amount is ₹20,300.",10.2,48,20300,no
+6,"This contract is valid for 12 months and requires a monthly payment of ₹9,500. There is no mention of penalties in the document.",,12,9500,no
+7,"The loan is offered at an annual percentage rate of 7.9% for a tenure of 36 months. Delayed payments are subject to penalty charges.",7.9,36,,yes
+8,"According to this agreement, the borrower must pay ₹17,800 every month for 48 months. A late payment penalty is applicable.",,48,17800,yes
+9,"This loan proposal offers an APR of 9% with a repayment duration of 60 months.",9,60,,no
+10,"The contract specifies an APR of 11.5% and requires a monthly installment of ₹21,000. Late payment penalties apply.",11.5,,21000,yes
+11,"This agreement defines a long-term loan with a repayment period of 72 months and a monthly payment of ₹16,400.",,72,16400,no
+12,"This vehicle loan includes an APR of 8.3% for a tenure of 48 months. The borrower must pay ₹18,100 monthly, and late fees are applicable.",8.3,48,18100,yes
+13,"The contract outlines a repayment duration of 36 months, during which the borrower must pay ₹14,800 each month.",,36,14800,no
+14,"An interest rate of 9.9% is charged under this agreement, with the full loan to be repaid over 24 months.",9.9,24,,no
+15,"This loan requires monthly payments of ₹19,000 over a span of 60 months. A penalty will be imposed for delayed installments.",,60,19000,yes
+16,"The borrower is provided with a car loan featuring an APR of 8.6% and a repayment tenure of 48 months.",8.6,48,,no
+17,"This lease agreement runs for 18 months with a monthly installment of ₹12,500. No penalty terms are stated.",,18,12500,no
+18,"This contract specifies an APR of 10.8%, a repayment term of 36 months, and a monthly payment obligation of ₹21,700.",10.8,36,21700,no
+19,"The loan must be repaid over a period of 84 months. The agreement clearly states that late payments will attract penalties.",,84,,yes
+20,"This loan offers an APR of 7.5% and requires a monthly installment of ₹13,900 for 48 months.",7.5,48,13900,no
+21,"The agreement sets a repayment period of 24 months with a monthly payment of ₹11,600. Late payment fees apply.",,24,11600,yes
+22,"An annual percentage rate of 12% applies to this contract, with a fixed monthly payment of ₹25,000.",12,,25000,no
+23,"This loan agreement runs for 36 months and does not mention any penalties within its terms.",,36,,no
+24,"The contract states a monthly installment amount of ₹18,750 and includes provisions for late payment penalties.",,,18750,yes
+25,"This vehicle loan agreement includes an APR of 9.1%, a tenure of 60 months, and a monthly payment of ₹20,100. Penalties apply for delayed payments.",9.1,60,20100,yes
+26,"This car loan agreement sets a repayment duration of 42 months with a monthly installment of ₹17,250. The document specifies that late payments will result in penalty charges.",,42,17250,yes
+27,"The borrower is offered financing at an APR of 8.9% for a period of 54 months. No penalty terms are mentioned in the agreement.",8.9,54,,no
