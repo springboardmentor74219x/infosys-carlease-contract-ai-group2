@@ -1,0 +1,13 @@
+id,customer_name,contract_type,vehicle_type,monthly_emi,interest_rate,tenure_months,clause_summary,risk_flag,issue_type,recommended_action,vin
+1,Rahul Mehta,Car Loan,Sedan,18500,9.5,48,Prepayment allowed only after 24 months with 5% penalty,medium,High prepayment charges,Highlight prepayment penalty to user and suggest negotiation for lower fee,1HGCM82633A004352
+2,Anita Rao,Car Lease,SUV,22000,0.0,36,Lessee must pay for all maintenance and insurance,low,Standard maintenance clause,"No action, just explain maintenance responsibility to user",1HGCM82633A004352
+3,James Wilson,Car Loan,Hatchback,14500,11.2,60,Late payment fee of 3% per month on outstanding amount,high,Aggressive late fee,Flag clause and suggest user request cap on late fee,1HGCM82633A004352
+4,Meena Iyer,Car Lease,Sedan,21000,0.0,24,"Excess mileage charge of ₹12 per km over 15,000 km per year",medium,High excess mileage rate,Warn user about extra mileage charges and recommend realistic mileage estimate,1HGCM82633A004352
+5,Arjun Patel,Car Loan,SUV,27500,10.8,72,Floating interest rate linked to lender's internal benchmark,high,Unclear interest benchmark,Explain floating rate risk and suggest asking for external benchmark or cap,1HGCM82633A004352
+6,Sana Khan,Car Lease,Hatchback,16500,0.0,36,Early termination fee equal to 6 months of EMI,high,Heavy early termination penalty,Flag as risky and suggest negotiating lower termination fee,1HGCM82633A004352
+7,Vikram Shah,Car Loan,Sedan,19500,8.9,36,No foreclosure charges after 12 months,low,User friendly foreclosure policy,"Mark as positive clause, no action required",1HGCM82633A004352
+8,Neha Singh,Car Lease,EV,25500,0.0,48,"Battery warranty covered only for 24 months or 40,000 km",medium,Limited EV battery warranty,Warn user about battery risk and suggest extended warranty discussion,1HGCM82633A004352
+9,David Roy,Car Loan,SUV,30500,12.5,84,Mandatory bundled insurance from lender at non-refundable premium,high,Forced insurance bundling,Flag as unfair tying and suggest independent insurance quote,1HGCM82633A004352
+10,Kiran Kumar,Car Lease,Sedan,18500,0.0,30,"Security deposit of 3 EMIs, refundable at end of lease subject to damage check",low,Standard security deposit,"Explain condition for refund, low risk",1HGCM82633A004352
+11,Pratima Das,Car Loan,Hatchback,13200,9.9,48,"Processing fee of 1.5% of loan amount, non-refundable",medium,High processing fee,Highlight cost and suggest user negotiate lower fee,1HGCM82633A004352
+12,Imran Ali,Car Lease,SUV,24500,0.0,42,Lessor can repossess vehicle after 2 consecutive missed payments without court order,high,Aggressive repossession clause,Strongly warn user and recommend clarification / negotiation,1HGCM82633A004352
