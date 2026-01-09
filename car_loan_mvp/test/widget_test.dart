@@ -2,11 +2,12 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:car_loan_mvp/main.dart';
 
 void main() {
-  testWidgets('App loads Login screen', (WidgetTester tester) async {
-    await tester.pumpWidget(CarLoanApp());
+  testWidgets('App loads Upload screen', (WidgetTester tester) async {
+    await tester.pumpWidget(const MyApp());
 
-    // Verify Login screen text
-    expect(find.text('Login'), findsOneWidget);
-    expect(find.text('Continue'), findsOneWidget);
+    // Verify Upload screen UI
+    expect(find.text('Upload Contract'), findsOneWidget);
+    expect(find.text('Pick Contract (PDF/Image)'), findsOneWidget);
+    expect(find.text('Upload'), findsOneWidget);
   });
 }
