@@ -1,4 +1,4 @@
 Txt
-fastapi 
-uvicorn 
-python-multipart 
+fastapi
+uvicorn
+python-multipart

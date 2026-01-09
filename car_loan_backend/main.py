@@ -14,6 +14,7 @@ app.add_middleware(
 
 @app.post("/upload")
 async def upload_contract(file: UploadFile = File(...)):
+    # Dummy upload handler (Week 5 continuation)
     return {
         "message": "Upload successful",
         "filename": file.filename
@@ -23,6 +24,7 @@ async def upload_contract(file: UploadFile = File(...)):
 async def negotiate(data: dict):
     question = data.get("question", "")
 
+    # Dummy AI response (Milestone 3 requirement)
     reply = (
         "You can negotiate a lower APR by highlighting your credit score "
         "and asking for better terms."
