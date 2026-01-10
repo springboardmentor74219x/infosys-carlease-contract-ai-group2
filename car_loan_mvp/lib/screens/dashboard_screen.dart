@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'negotiation_screen.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
@@ -10,9 +11,10 @@ class DashboardScreen extends StatelessWidget {
         title: const Text('Car Loan Assistant'),
         centerTitle: true,
       ),
-      body: Center(
+      body: Padding(
+        padding: const EdgeInsets.all(16),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             const Text(
               'Contract Details',
@@ -23,6 +25,7 @@ class DashboardScreen extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(12),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: const [
                     Text('Customer: Arjun Patel'),
                     Text('Vehicle: SUV'),
@@ -33,24 +36,17 @@ class DashboardScreen extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 20),
-            const Text(
-              'Negotiation Advice',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 10),
-            Card(
-              color: Colors.orangeAccent,
-              child: Padding(
-                padding: const EdgeInsets.all(12),
-                child: Column(
-                  children: const [
-                    Text('• Negotiate interest rate'),
-                    Text('• Reduce loan tenure'),
-                    Text('• Compare other bank offers'),
-                  ],
-                ),
-              ),
+            const SizedBox(height: 30),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => const NegotiationScreen(),
+                  ),
+                );
+              },
+              child: const Text('View Negotiation Advice'),
             ),
           ],
         ),

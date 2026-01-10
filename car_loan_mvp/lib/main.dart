@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/upload_screen.dart';
+import 'screens/login_screen.dart';
 
 void main() {
   runApp(const CarLoanApp());
@@ -10,9 +10,9 @@ class CarLoanApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const UploadScreen(),
+      home: LoginScreen(),
     );
   }
 }
