@@ -6,6 +6,7 @@ import 'dashboard_screen.dart';
 
 class UploadScreen extends StatefulWidget {
   const UploadScreen({super.key});
+
   @override
   State<UploadScreen> createState() => _UploadScreenState();
 }
@@ -13,22 +14,29 @@ class UploadScreen extends StatefulWidget {
 class _UploadScreenState extends State<UploadScreen> {
   bool loading = false;
   String? selectedFileName;
+
   Future<void> pickAndUploadFile() async {
     try {
       setState(() => loading = true);
+
       final result = await FilePicker.platform.pickFiles(
         type: FileType.custom,
         allowedExtensions: ['pdf', 'png', 'jpg', 'jpeg'],
         withData: true,
       );
+
       if (result == null) {
         setState(() => loading = false);
         return;
       }
+
       final Uint8List fileBytes = result.files.single.bytes!;
       final String fileName = result.files.single.name;
+
       setState(() => selectedFileName = fileName);
+
       await ApiService.uploadContractBytes(fileBytes, fileName);
+
       if (mounted) {
         Navigator.pushReplacement(
           context,

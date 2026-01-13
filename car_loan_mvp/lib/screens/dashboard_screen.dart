@@ -3,6 +3,7 @@ import '../services/api_service.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,12 +24,14 @@ class DashboardScreen extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 30),
+
             // NEGOTIATION BUTTON
             ElevatedButton(
               child: const Text("Get Negotiation Advice"),
               onPressed: () async {
                 final reply = await ApiService.getNegotiationAdvice(
                     "How can I reduce my APR?");
+
                 showDialog(
                   context: context,
                   builder: (_) => AlertDialog(
