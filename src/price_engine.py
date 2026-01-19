@@ -1,7 +1,7 @@
 import pandas as pd
 from datetime import datetime
 
-prices = pd.read_csv("data/market_prices.csv")
+prices = pd.read_csv("../data/market_prices.csv")
 
 def estimate_fair_price(car_model, year):
     row = prices[prices["car_model"] == car_model]
