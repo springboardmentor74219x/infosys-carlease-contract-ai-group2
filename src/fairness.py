@@ -1,12 +1,12 @@
-def compute_fairness(contract_price, fair_price):
-    if fair_price is None:
+def compute_fairness(contract_price, fair_price_range):
+    if fair_price_range is None:
         return "UNKNOWN"
 
-    ratio = contract_price / fair_price
+    lower, upper = fair_price_range
 
-    if ratio <= 1.05:
+    if contract_price <= upper:
         return "FAIR"
-    elif ratio <= 1.20:
+    elif contract_price <= upper * 1.2:
         return "SLIGHTLY OVERPRICED"
     else:
         return "UNFAIR"

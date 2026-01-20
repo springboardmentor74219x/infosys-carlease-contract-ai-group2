@@ -1,34 +1,12 @@
-from src.price_engine import estimate_fair_price
-from src.fairness import compute_fairness
+def extract_clauses(contract_text):
+    issues = []
 
+    text = contract_text.lower()
 
-def analyze_contract(contract):
-    car = contract["car_model"]
-    year = contract["year"]
-    price = contract["price"]
+    if "penalty" in text:
+        issues.append("Penalty clause detected")
 
-    fair_price = estimate_fair_price(car, year)
-    fairness = compute_fairness(price, fair_price)
+    if "foreclosure" in text:
+        issues.append("Foreclosure clause detected")
 
-    return {
-        "car": car,
-        "year": year,
-        "contract_price": price,
-        "fair_price": fair_price,
-        "fairness": fairness
-    }
-
-def generate_explanation(contract):
-    analysis = analyze_contract(contract)
-
-    prompt = f"""
-Car: {analysis['car']}
-Market Value: {analysis['fair_price']}
-Offered Price: {analysis['contract_price']}
-Fairness: {analysis['fairness']}
-
-Explain this deal to the user in simple language.
-"""
-
-    response = llm.invoke(prompt)
-    return response.content
+    return issues
