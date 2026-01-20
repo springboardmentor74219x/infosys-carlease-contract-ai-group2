@@ -1,6 +1,7 @@
-from fairness import compute_fairness
-from price_engine import get_fair_price_range
-from classifier import extract_clauses
+from src.price_engine import get_fair_price_range
+from src.fairness import compute_fairness
+from src.classifier import extract_clauses
+
 
 def analyze_contract(contract_price, car_price, contract_text):
     fair_range = get_fair_price_range(car_price)
