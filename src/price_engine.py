@@ -1,11 +1,7 @@
-import pandas as pd
-from datetime import datetime
-
-# Load market data
-import os
-
-BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-prices = pd.read_csv(os.path.join(BASE_DIR, "data", "market_prices.csv"))
-
-def estimate_fair_price(car_model, year):
-   row = prices[prices["car_model"] == car_model]
+def get_fair_price_range(car_price):
+    """
+    Returns a fair price range (+/- 5%)
+    """
+    lower = round(car_price * 0.95, 2)
+    upper = round(car_price * 1.05, 2)
+    return (lower, upper)
