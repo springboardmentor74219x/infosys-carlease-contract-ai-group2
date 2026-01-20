@@ -73,3 +73,4 @@ Each intern must:
 ## 📜 License
 MIT License © 2025 Infosys Internship  
 Mentor: **Suresh Kumar Pantla**
+Contributor: Bezawada Krishna Chaitanya – Group 2 Intern
