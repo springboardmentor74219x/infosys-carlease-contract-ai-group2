@@ -89,10 +89,10 @@ Our goal is to convert complicated legal documents into simple, actionable insig
 
 infosys-carlease-contract-ai-group2  
 │  
-├── data/  
-├── src/  
-├── notebooks/  
-├── flutter_app/  
+├── data/  # Sample contracts and market dataset
+├── src/  # Backend logic and AI modules
+├── notebooks/  # Experiments and analysis
+├── flutter_app/  # Mobile application
 │  
 ├── README.md  
 └── LICENSE  
