@@ -1,0 +1,6 @@
+contract_text,llm_apr,llm_term,llm_payment,llm_penalty,expected_apr,expected_term,expected_payment,expected_penalty,apr_match,term_match,payment_match,penalty_match
+This auto lease agreement between CarEase Ltd and Rahul Nanda states a monthly payment of $575 for 30 months.,,,,,,30.0,575.0,,1,0,0,1
+This auto financing agreement between National Auto Loans and Deepak Mishra includes a repayment term of 72 months and a monthly payment of $890.,,,,,,72.0,890.0,,1,0,0,1
+This agreement between DriveSmart Leasing and Mehul Desai states a lease duration of 12 months with a monthly installment of $390.,,,,,,12.0,390.0,,1,0,0,1
+This vehicle loan document between SpeedTrack Finance and Nidhi Kapoor states a term of 48 months. A foreclosure penalty of $400 applies.,,,,,,48.0,,foreclosure penalty of $400,1,0,1,0
+This lease contract signed by Urban Auto and Kavya Nair states a monthly payment of $495 for a term of 18 months. A penalty of $200 applies for early termination.,,,,,,18.0,495.0,early termination fee of $200,1,0,0,0

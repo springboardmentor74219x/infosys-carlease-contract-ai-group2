@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/upload_screen.dart';
+import 'screens/login_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +12,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const UploadScreen(),
+      title: 'Car Lease Contract AI',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF0066CC),
+          brightness: Brightness.light,
+        ),
+      ),
+      home: const LoginScreen(),
     );
   }
 }

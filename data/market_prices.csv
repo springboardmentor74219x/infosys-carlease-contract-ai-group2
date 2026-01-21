@@ -1,0 +1,6 @@
+car_model,year,base_price,depreciation_per_year
+Toyota Corolla,2020,12000,0.12
+Honda Civic,2020,13000,0.11
+Hyundai i20,2021,11000,0.10
+Maruti Swift,2021,10000,0.10
+Hyundai Creta,2022,18000,0.09
