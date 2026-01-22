@@ -15,7 +15,6 @@ result_1 = analyze_contract(
 print("Test Case 1 Result:")
 print(result_1)
 
-
 # Test Case 2
 contract_text_2 = """
 Loan amount mentioned.

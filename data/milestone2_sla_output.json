@@ -1,0 +1,30 @@
+[
+  {
+    "contract_id": 0,
+    "sla": {
+      "interest_rate_apr": 10.49,
+      "lease_term_months": 24,
+      "monthly_payment": 959,
+      "down_payment": null,
+      "residual_value": null,
+      "mileage_allowance": null,
+      "overage_charge": null,
+      "early_termination": null,
+      "purchase_option": null,
+      "maintenance_responsibility": null,
+      "warranty_insurance": null,
+      "penalties": null,
+      "missing_or_ambiguous_clauses": [
+        "down_payment",
+        "residual_value",
+        "mileage_allowance",
+        "overage_charge",
+        "early_termination",
+        "purchase_option",
+        "maintenance_responsibility",
+        "warranty_insurance",
+        "penalties"
+      ]
+    }
+  }
+]

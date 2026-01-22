@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:image_picker/image_picker.dart';
+import 'negotiation_screen.dart';
 
 class UploadScreen extends StatefulWidget {
   const UploadScreen({super.key});
@@ -11,64 +12,89 @@ class UploadScreen extends StatefulWidget {
 }
 
 class _UploadScreenState extends State<UploadScreen> {
-  final Color themeColor = const Color(0xFF1A237E);
-
   File? selectedFile;
-  double progress = 0;
-  bool uploaded = false;
-  bool showResult = false;
+  double progress = 0.0;
+  bool isUploading = false;
 
-  // Pick from storage
-  Future pickFile() async {
-    final result = await FilePicker.platform.pickFiles();
-    if (result != null) {
-      setState(() {
-        selectedFile = File(result.files.single.path!);
-        uploaded = false;
-        showResult = false;
-      });
+  // Pick any file
+  Future<void> pickFile() async {
+    try {
+      final result = await FilePicker.platform.pickFiles();
+
+      if (result != null && result.files.single.path != null) {
+        setState(() {
+          selectedFile = File(result.files.single.path!);
+          progress = 0;
+        });
+
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text("File selected successfully")),
+        );
+      }
+    } catch (e) {
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text("File error: $e")));
     }
   }
 
-  // Pick from camera
-  Future pickFromCamera() async {
-    final picked = await ImagePicker().pickImage(source: ImageSource.camera);
-    if (picked != null) {
-      setState(() {
-        selectedFile = File(picked.path);
-        uploaded = false;
-        showResult = false;
-      });
+  // Pick image from gallery
+  Future<void> pickImage() async {
+    try {
+      final picked = await ImagePicker().pickImage(source: ImageSource.gallery);
+
+      if (picked != null) {
+        setState(() {
+          selectedFile = File(picked.path);
+          progress = 0;
+        });
+
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text("Image selected successfully")),
+        );
+      }
+    } catch (e) {
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text("Image error: $e")));
     }
   }
 
-  // Upload simulation (replace with real backend)
-  Future uploadFile() async {
-    if (selectedFile == null) return;
+  // Upload simulation
+  Future<void> uploadFile() async {
+    if (selectedFile == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text("Please select a file first")),
+      );
+      return;
+    }
 
-    setState(() => progress = 0);
+    setState(() {
+      isUploading = true;
+      progress = 0.01;
+    });
 
-    // Fake progress animation
     for (int i = 1; i <= 10; i++) {
-      await Future.delayed(const Duration(milliseconds: 200));
-      setState(() => progress = i / 10);
+      await Future.delayed(const Duration(milliseconds: 300));
+      if (!mounted) return;
+      setState(() {
+        progress = i / 10;
+      });
     }
 
-    setState(() => uploaded = true);
+    setState(() => isUploading = false);
 
-    await Future.delayed(const Duration(seconds: 1));
-    setState(() => showResult = true);
+    // Navigate after upload
+    if (mounted) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (_) => const NegotiationScreen()),
+      );
+    }
   }
 
   @override
   Widget build(BuildContext context) {
-    if (showResult) return resultScreen();
-    if (uploaded) return successScreen();
-    return uploadUI();
-  }
-
-  // ================= UPLOAD UI =================
-  Widget uploadUI() {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
@@ -93,7 +119,6 @@ class _UploadScreenState extends State<UploadScreen> {
                   "Upload Contract",
                   style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                 ),
-
                 const SizedBox(height: 20),
 
                 if (selectedFile != null)
@@ -128,15 +153,14 @@ class _UploadScreenState extends State<UploadScreen> {
                 const SizedBox(height: 10),
 
                 ElevatedButton.icon(
-                  onPressed: pickFromCamera,
-                  icon: const Icon(Icons.camera_alt),
-                  label: const Text("Capture from Camera"),
+                  onPressed: pickImage,
+                  icon: const Icon(Icons.image),
+                  label: const Text("Select Image"),
                 ),
 
                 const SizedBox(height: 20),
 
-                if (progress > 0 && progress < 1)
-                  LinearProgressIndicator(value: progress),
+                if (progress > 0) LinearProgressIndicator(value: progress),
 
                 const SizedBox(height: 20),
 
@@ -144,8 +168,10 @@ class _UploadScreenState extends State<UploadScreen> {
                   width: double.infinity,
                   height: 50,
                   child: ElevatedButton(
-                    onPressed: selectedFile == null ? null : uploadFile,
-                    child: const Text("Upload & Analyze"),
+                    onPressed: isUploading ? null : uploadFile,
+                    child: Text(
+                      isUploading ? "Uploading..." : "Upload & Analyze",
+                    ),
                   ),
                 ),
               ],
@@ -155,27 +181,4 @@ class _UploadScreenState extends State<UploadScreen> {
       ),
     );
   }
-
-  // ================= SUCCESS SCREEN =================
-  Widget successScreen() {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Icon(Icons.check_circle, color: Colors.green, size: 120),
-            const SizedBox(height: 20),
-            const Text(
-              "Upload Successful!",
-              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () => setState(() => showResult = true),
-              child: const Text("View AI Result"),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
+}

@@ -14,7 +14,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   shared_preferences: ^2.2.2
   http: ^1.2.0
-  file_picker: ^8.0.0
+  file_picker: ^6.1.1
   image_picker: ^1.0.7
   flutter_dropzone: ^4.2.1
   open_filex: ^4.4.0
