@@ -1,5 +1,33 @@
 # Car Lease/Loan Contract Review and Negotiation AI Assistant – Group 2
 
+📌 Project Overview
+
+Buying a car often involves complex contracts filled with legal and financial jargon. This project builds an AI-powered assistant that reads, analyzes, and simplifies car lease or loan contracts, helping users make smart financial decisions.
+
+🎯 Project Vision
+
+To empower users to understand and negotiate car contracts without requiring legal or financial expertise.
+
+💡 Key Features
+
+📄 Extracts key information from car lease and loan contracts
+
+⚠️ Detects hidden charges and unfair contract clauses
+
+💰 Compares contract prices with real-world market values
+
+🤖 Generates AI-based personalized negotiation suggestions
+
+🧠 Converts complex legal terms into simple, user-friendly insights
+
+👥 Who Can Use It?
+
+Car buyers and lease customers
+
+Individuals with no legal or financial background
+
+Anyone wanting to avoid unfair contract deals
+
 This project uses AI to automatically:
 - Extract important details from lease/loan contracts
 - Identify hidden charges or risks
