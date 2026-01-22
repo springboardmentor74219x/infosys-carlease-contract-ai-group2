@@ -1,6 +1,11 @@
 import pandas as pd
+import os
 
-prices = pd.read_csv("data/market_prices.csv")
+# Always resolve path from this file's location
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_PATH = os.path.join(BASE_DIR, "data", "market_prices.csv")
+
+prices = pd.read_csv(DATA_PATH)
 
 def estimate_fair_price(car_model, year):
     row = prices[prices["car_model"] == car_model]
