@@ -1,0 +1,47 @@
+
+--- Page 1 ---
+id,customer_name,contract_type,vehicle_type,monthly_emi,interest_rate,tenure_months,clause_summr
+1,Rahul Mehta,Car Loan,Sedan,18500,9.5,48,"Prepayment allowed only after 24 months with 5% pene
+2,Anita Rao,Car Lease, SUV ,22000,0,36,"Lessee must pay for all maintenance and insurance","|low","S
+3,James Wilson,Car Loan,Hatchback,14500,11.2,60,"Late payment fee of 3% per month on outstandir
+4,Meena lyer,Car Lease,Sedan,21000,0,24,"Excess mileage charge of ¥12 per km over 15,000 km pei
+5,Arjun Patel,Car Loan,SUV,27500,10.8,72,"Floating interest rate linked to lender's internal benchmark
+6,Sana Khan,Car Lease,Hatchback, 16500,0,36,"Early termination fee equal to 6 months of EMI","high"
+7,Vikram Shah,Car Loan,Sedan,19500,8.9,36,"No foreclosure charges after 12 months","low","User fri
+8,Neha Singh,Car Lease,EV,25500,0,48,"Battery warranty covered only for 24 months or 40,000 km","
+9,David Roy,Car Loan,SUV,30500,12.5,84,"Mandatory bundled insurance from lender at non-refundab
+10,Kiran Kumar,Car Lease,Sedan,18500,0,30,"Security deposit of 3 EMls, refundable at end of lease ¢
+11,Pratima Das,Car Loan,Hatchback,13200,9.9,48,"Processing fee of 1.5% of loan amount, non-refun:
+12,lmran Ali,Car Lease, SUV,24500,0,42,"Lessor can repossess vehicle after 2 consecutive missed pay
+
+--- Page 2 ---
+lary,risk_flag,issue_type,recommended_action
+
+alty","medium","High prepayment charges","Highlight prepayment penalty to user and suggest negotiatic
+‘tandard maintenance clause","No action, just explain maintenance responsibility to user"
+
+\g amount","high","Aggressive late fee","Flag clause and suggest user request cap on late fee"
+
+r year","medium","High excess mileage rate","Warn user about extra mileage charges and recommend
+","high","Unclear interest benchmark","Explain floating rate risk and suggest asking for external benchn
+',"Heavy early termination penalty","Flag as risky and suggest negotiating lower termination fee"
+
+endly foreclosure policy","Mark as positive clause, no action required"
+
+medium","Limited EV battery warranty","Warn user about battery risk and suggest extended warranty d
+le premium","high","Forced insurance bundling","Flag as unfair tying and suggest independent insuranc
+subject to damage check","low","Standard security deposit","Explain condition for refund, low risk"
+dable","medium","High processing fee","Highlight cost and suggest user negotiate lower fee"
+
+yments without court order","high","Aggressive repossession clause","Strongly warn user and recomme!
+
+--- Page 3 ---
+on for lower fee"
+
+realistic mileage estimate"
+nark or cap"
+
+iscussion"
+se quote"
+
+nd clarification / negotiation"

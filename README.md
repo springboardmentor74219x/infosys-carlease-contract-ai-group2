@@ -25,6 +25,16 @@ To build a smart contract reviewer that:
 
 ---
 
+## Architecture (Milestone 1)
+
+1. User uploads car lease/loan contract PDF
+2. Backend stores uploaded PDF
+3. OCR service extracts text from PDF
+4. Extracted plain text is stored for later analysis
+
+Pipeline:
+PDF → Upload API → OCR (Tesseract) → Text Storage
+
 ## 🧠 Tech Stack
 
 | Category | Tools |
