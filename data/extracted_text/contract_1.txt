@@ -1,0 +1,16 @@
+
+--- Page 1 ---
+CAR LOAN CONTRACT
+
+Customer: Rahul Mehta
+Contract Type: Car Loan
+Vehicle: Sedan
+
+Monthly EMI: 18500
+Interest Rate: 9.5
+
+Tenure: 48 months
+
+Clauses:
+
+Prepayment allowed only after 24 months with 5% penalty
