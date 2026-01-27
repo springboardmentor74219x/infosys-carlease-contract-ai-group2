@@ -1,15 +1,29 @@
-from src.price_engine import get_fair_price_range
-from src.fairness import compute_fairness
-from src.classifier import extract_clauses
+from flask import Flask, request, jsonify
+from llm_service import extract_sla_with_llm
+from vin_service import lookup_vin
+from storage import save_sla_json
 
+app = Flask(__name__)
 
-def analyze_contract(contract_price, car_price, contract_text):
-    fair_range = get_fair_price_range(car_price)
-    fairness = compute_fairness(contract_price, fair_range)
-    clauses = extract_clauses(contract_text)
+@app.route("/analyze", methods=["POST"])
+def analyze_contract():
+    data = request.json
 
-    return {
-        "fair_price_range": fair_range,
-        "fairness_score": fairness,
-        "qa_issues": clauses
-    }
+    contract_id = data["contract_id"]
+    contract_text = data["contract_text"]
+    vin = data["vin"]
+
+    sla_data = extract_sla_with_llm(contract_text)
+    sla_path = save_sla_json(contract_id, sla_data)
+
+    vehicle_data = lookup_vin(vin)
+
+    return jsonify({
+        "contract_id": contract_id,
+        "sla_data": sla_data,
+        "vehicle_data": vehicle_data,
+        "sla_file": sla_path
+    })
+
+if __name__ == "__main__":
+    app.run(debug=True)

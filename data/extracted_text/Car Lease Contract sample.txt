@@ -1,0 +1,21 @@
+Car Lease Contract — Test File
+
+e Customer Name: John Doe
+
+e Customer ID: CUST12345
+
+e Vehicle: Toyota Corolla
+
+e Model Year: 2022
+
+e =VIN: 1HGCM82633A123456
+
+e Lease Term: 36 months
+
+e Monthly Payment: =15,000
+
+e APR (Annual Percentage Rate): 7.5%
+e Start Date: 01-Jan-2024
+
+e End Date: 31-Dec-2026
+
