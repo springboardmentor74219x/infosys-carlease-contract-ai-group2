@@ -161,4 +161,4 @@ MIT License © 2025
 
 Project developed under Infosys Springboard Internship  
 Mentor: Suresh Kumar Pantla  
-Contributor: Pavan Srinivas Jonnala – Group 2 Intern
+Contributor: Thuppudu Dheeraj Kumar – Group 2 Intern
