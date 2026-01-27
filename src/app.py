@@ -1,34 +1,26 @@
-import pandas as pd
-from fpdf import FPDF
-import os
+from flask import Flask, request, jsonify
+from ocr_service import extract_text_from_pdf
+from storage import save_uploaded_file, get_text_output_path
 
-df = pd.read_csv("data/sample_car_contracts.csv")
+app = Flask(__name__)
 
-os.makedirs("data/uploads", exist_ok=True)
+@app.route("/upload", methods=["POST"])
+def upload_contract():
+    if "file" not in request.files:
+        return jsonify({"error": "No file uploaded"}), 400
 
-for i, row in df.head(2).iterrows():
-    pdf = FPDF()
-    pdf.add_page()
-    pdf.set_auto_page_break(auto=True, margin=15)
-    pdf.set_font("Arial", size=12)
+    file = request.files["file"]
 
-    text = f"""
-CAR LOAN CONTRACT
+    pdf_path = save_uploaded_file(file)
+    text_path = get_text_output_path(file.filename)
 
-Customer: {row['customer_name']}
-Contract Type: {row['contract_type']}
-Vehicle: {row['vehicle_type']}
-Monthly EMI: {row['monthly_emi']}
-Interest Rate: {row['interest_rate']}
-Tenure: {row['tenure_months']} months
+    extract_text_from_pdf(pdf_path, text_path)
 
-Clauses:
-{row['clause_summary']}
-"""
+    return jsonify({
+        "message": "Contract processed successfully",
+        "pdf_path": pdf_path,
+        "text_path": text_path
+    })
 
-    for line in text.split("\n"):
-        pdf.multi_cell(0, 8, line)
-
-    pdf.output(f"data/uploads/contract_{i+1}.pdf")
-
-print("PDFs generated successfully.")
+if __name__ == "__main__":
+    app.run(debug=True)

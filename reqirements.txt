@@ -1,40 +1,43 @@
-#Core Python
+pytesseract
+pillow
+pdf2image
+
+
+# Core Python
 python-dateutil
 
-#Data Handling
+# Data Handling
 pandas
 numpy
 
-#NLP & AI
+# NLP & AI
 spacy
 langchain
 openai
 
-#OCR
-Txt
-flask
+# OCR
 pytesseract
-pdf2image
 pillow
+pdf2image
 
-#Machine Learning
+# Machine Learning
 scikit-learn
 
-#Backend & API
+# Backend & API
 fastapi
 uvicorn
 pydantic
 
-#File Upload & Handling
+# File Upload & Handling
 python-multipart
 
-#Visualization & Notebooks
+# Visualization & Notebooks
 matplotlib
 seaborn
 jupyter
 notebook
 
-#Utilities
+# Utilities
 requests
 tqdm
 python-dotenv
