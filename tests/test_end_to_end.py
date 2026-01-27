@@ -1,4 +1,4 @@
-from src.classifier import analyze_contract
+from src.classsifier import analyze_contract
 
 contracts = [
     {"car_model": "Toyota Corolla", "year": 2020, "price": 5600},
