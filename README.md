@@ -96,8 +96,7 @@ AI processing (Milestone-2 onwards)
 
 
 ---
-
-## 📁 Project Structure
+📁 Project Structure
 
 infosys-carlease-contract-ai-group2
 │
@@ -108,6 +107,7 @@ infosys-carlease-contract-ai-group2
 │
 ├── README.md
 └── LICENSE
+
 
 
 ---
