@@ -116,7 +116,7 @@ infosys-carlease-contract-ai-group2
 3. OCR service extracts text from PDF
 4. Extracted plain text is stored for later analysis
 Pipeline:
-PDF → Upload API → OCR (Tesseract) → Text Storage
+PDF → Upload API → OCR (Tesseract) → Text Storage.
 
 ---
 
