@@ -1,66 +1,56 @@
-# AI-Powered Car Lease & Loan Contract Review and Negotiation Assistant  
+# 🚗 AI-Powered Car Lease & Loan Contract Negotiation Assistant  
 ### Turn Complex Contracts into Smart Decisions
 
-Buying a car often becomes stressful because lease and loan contracts are
-filled with legal and financial jargon that is difficult for normal users
-to understand.
+Buying a car often becomes stressful because contracts are filled with legal and financial jargon.  
+This project builds an **AI-powered assistant** that can read, analyze, and help negotiate car lease or loan contracts just like a smart financial advisor.
 
-This project builds an **AI-powered assistant** that can read, analyze,
-and help users review car lease or loan contracts — acting like a smart
-financial advisor.
-
-The system extracts key information from contracts, highlights important
-clauses, and prepares the foundation for AI-based risk detection and
-negotiation assistance.
+The system extracts key information from contracts, detects unfair terms, compares with real market prices, and generates personalized negotiation suggestions for the user.
 
 ---
 
 ## 🎯 Project Vision
 
-To help users understand car loan and lease contracts **without requiring
-legal or financial expertise** by using Artificial Intelligence.
+To help normal users understand car loan/lease contracts without legal knowledge by using Artificial Intelligence.
 
 This system enables users to:
 
-- Understand what is written inside their contract  
-- Extract key financial and legal terms  
-- Detect risky or unfavorable clauses (planned)  
-- Receive AI-assisted negotiation guidance (planned)  
+- Understand what is inside their contract  
+- Identify hidden charges and risky clauses  
+- Compare the contract price with market value  
+- Receive AI-generated negotiation advice  
 
-Our goal is to **convert complex legal documents into simple,
-actionable insights**.
+Our goal is to convert complicated legal documents into simple, actionable insights.
 
 ---
 
 ## 🧩 Core Functionalities
 
-### 🔍 1. Contract Understanding (Milestone-1)
-- Accepts car lease/loan contract PDFs
-- Uploads and stores documents securely
-- Extracts raw text using OCR
-- Stores extracted text for further analysis
+### 🔍 1. Contract Understanding
+- Accepts PDF or image of contract  
+- Extracts important fields using OCR and NLP  
+- Identifies APR, tenure, penalties, fees, and clauses  
 
-### ⚠️ 2. Risk Detection (Upcoming)
-- Identify high interest rates
-- Detect penalty clauses and hidden fees
-- Highlight unfavorable contract conditions
+### ⚠️ 2. Risk Detection
+- Finds high interest rates  
+- Detects hidden processing charges  
+- Highlights unfavorable conditions  
 
-### 💸 3. Market Fairness Analysis (Upcoming)
-- Compare contract price with market datasets
-- Estimate fair vehicle pricing
-- Generate fairness indicators
+### 💸 3. Market Fairness Analysis
+- Compares contract price with market dataset  
+- Estimates fair price of vehicle  
+- Generates fairness score  
 
-### 🤖 4. AI Negotiation Assistant (Upcoming)
-- Suggest negotiation strategies
-- Recommend reductions in APR or fees
-- Generate ready-to-use negotiation statements
+### 🤖 4. AI Negotiation Assistant
+- Suggests how to negotiate APR  
+- Recommends reducing fees  
+- Provides ready-to-use negotiation sentences  
 
 ---
 
 ## 🏢 Internship Information
 
 - **Platform:** Infosys Springboard Internship  
-- **Project Title:** AI-LLM Based Car Lease / Loan Contract Review & Negotiation Assistant  
+- **Project Title:** AI LLM Based Car Lease Contract Review & Negotiation Assistant  
 - **Mentor:** Suresh Kumar Pantla  
 - **Duration:** 8 Weeks  
 - **Team:** Group 2  
@@ -73,30 +63,28 @@ actionable insights**.
 | Category | Tools |
 |--------|------|
 | Programming | Python |
-| Backend | Flask |
-| OCR | Tesseract OCR, Poppler |
-| NLP / AI (Planned) | Large Language Models, LangChain |
+| NLP | LangChain, spaCy |
+| AI | Large Language Models |
+| OCR | Tesseract |
+| Frontend | Flutter |
 | Data Handling | Pandas |
-| UI (Planned) | Streamlit / Flutter |
+| Deployment | FastAPI / Streamlit |
 | Version Control | Git & GitHub |
 
 ---
 
 ## 🧱 System Workflow
 
-User uploads contract PDF
-↓
-Backend stores PDF
-↓
-OCR extracts text (Poppler + Tesseract)
-↓
-Extracted text stored for analysis
-↓
-AI processing (Milestone-2 onwards)
-
+1. User uploads contract document  
+2. OCR extracts text from file  
+3. NLP module identifies important terms  
+4. Risk analyzer calculates fairness  
+5. LLM generates negotiation advice  
+6. User views results in dashboard  
 
 ---
-📁 Project Structure
+
+## 📁 Project Structure
 
 infosys-carlease-contract-ai-group2
 │
@@ -109,70 +97,68 @@ infosys-carlease-contract-ai-group2
 └── LICENSE
 
 
-
 ---
 
 ## 🗺 Milestones
 
-| Milestone | Description | Status |
-|---------|-------------|--------|
-| Week 2 | Contract upload & OCR text extraction | ✅ Completed |
-| Week 4 | NLP-based SLA & risk detection | ⏳ Upcoming |
-| Week 6 | Negotiation assistant & UI | ⏳ Upcoming |
-| Week 8 | Final integration & demo | ⏳ Upcoming |
+| Milestone | Description |
+|----------|------------|
+| Week 2 | Data extraction and preprocessing |
+| Week 4 | NLP risk detection |
+| Week 6 | Negotiation module and UI |
+| Week 8 | Final integration |
 
 ---
 
-## 🏗 Architecture (Milestone-1)
+## 🏗 Architecture (Milestone 1)
 
-1. User uploads car lease/loan contract PDF  
-2. Backend stores uploaded document  
-3. OCR service extracts text from PDF  
-4. Extracted text is stored for later AI analysis  
+- User uploads car lease/loan contract PDF  
+- Backend stores uploaded PDF  
+- OCR service extracts text from PDF  
+- Extracted plain text is stored for later analysis  
 
-### Pipeline
-
-PDF → Upload API → OCR (Tesseract + Poppler) → Text Storage
-
+Pipeline:  
+PDF → Upload API → OCR (Tesseract) → Text Storage
 
 ---
 
-## ✅ Features Implemented (Milestone-1)
+## ✅ Features Implemented
 
-- PDF upload via API
-- OCR text extraction
-- Secure file storage
-- Backend health check endpoint
-- End-to-end pipeline tested using Postman
+- PDF upload  
+- OCR extraction  
+- Fair price estimation  
+- Fairness scoring  
+- AI negotiation chatbot  
+- Interactive Flutter UI  
 
 ---
 
 ## 🤝 Contribution Rules
 
-- Work only in your **own branch**
-- Use meaningful commit messages
-- Do not push directly to `main`
-- Update documentation with each milestone
+- Work only in your branch  
+- Use meaningful commit messages  
+- Do not push directly to main  
+- Update documentation regularly  
 
 ---
 
 ## 🌟 Project Impact
 
-This application is useful for:
+This application benefits:
 
 - First-time car buyers  
 - Non-technical users  
 - Students and professionals  
-- Anyone confused by loan or lease contracts  
+- Anyone confused by loan contracts  
 
-The AI assistant acts as a **personal contract advisor**, helping users
-make confident and informed decisions.
+AI acts as a personal contract advisor for the user.
 
 ---
 
 ## 📜 License
 
 MIT License © 2025  
-Project developed under **Infosys Springboard Internship**  
-Mentor: **Suresh Kumar Pantla**  
-Contributor: **Thuppudu Dheeraj Kumar – Group 2 Intern**
+
+Project developed under Infosys Springboard Internship  
+Mentor: Suresh Kumar Pantla  
+Contributor: Pavan Srinivas Jonnala – Group 2 Intern
