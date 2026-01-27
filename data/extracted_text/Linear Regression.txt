@@ -1,0 +1,179 @@
+Made with GOOdnotes
+
+
+Linear Regression
+
+Problem 5 tekememb
+
+Now lets see how you actually create a best fit line
+
+= Me +h . > SSopy
+O-= b> Ant tr ce py
+
+MC =) Nata hom
+
+M2) Pad’ chon
+
+Made with GOOdnotes
+
+
+wD
+
+"5 2 23 oc
+
+NE
+Ne)
+
+hO(x) = Oo + Gi Qo Ttercens
+O1,> Vos
+
+DY have to bimeh by habe vodug CL) Oo and Q).
+
+Made with GOOdnotes
+
+Cost function
+
+.) _ y U y *
+(Oi) = hoe? 4)
+
+h Oe)
+\) |
+
+Cost Aumnckton
+
+You have to AML Y'2 ef ; |
+65. ©, 2€ Fhg Cost fim c Ham by CMing 1g kh Valle of
+
+y)
+
+v
+
+Gradient Descent
+ir 7
+{ 2,2
+¢ 3,33
+
+(ho) = Og+ Oj x
+Made wi itn Goodnotes ho ) = OF 1(O = |
+
+
+((2~ = 2
+(3) = 2
+
+n(e)z 9 F
+
+Cyrnds mh
+dncet
+CLAVE
+
+J@y~ | | y |
+— | W-09+0-2) 4 @44)2) -
+(- 09) + (-2) + B49?( =
+
+2 (bal? - 4°)”
+
+7(60,0)- 1 3
+
+am (=!
+- | a L:
+— (4-0 t Q-2) +6375)
+= (O* 40%102)
+
+O,= “S 2 90 =O
+(ho) = @o+0.1~,
+
+O+ *S(i) =>
+Ot +S (zr) = 1
+
+Y << / Ot -§ (3) = leg
+x= O°S$8
+9, =0,6,=0 T(o) = 1
+
+— >
+
+le) 9% 659
+0(O1) © 22.2
+
+J (1,94)
+
+Rohyeak- Convergence
+
+T heosom
+Leauruing Rake
+OX
+
+O1
+
+Y= mre +h
+
+h (0) = Go+Oix,
+NCO)
+
+~ On om
+
+eg
+Perhormonce amok Niceo
+A” Adjusted R? h(a)
+?
+2 2
+A= | — Dum 6b Res sduelo = 1 S(yr - 44)
+Aum ob totes - Z (yi - 4)"
+dg
+
+; , . Fhe Rot wil be Auer losl-t\ye
+
+‘ ho Abul u'll be 1m Dect'mad
+
+"86 = Bby
+x
+
+(Cal x
+lion Age tay” ane t. gly
+Na oe a
+R= Oe,
+RE 897, — Modes
+
+Made with GOOdnotes
+
+Adjurted R.2
+> 1- (1-2) (m-1+) == M+ ah Rows
+
+Localvn A © — 2a 2 2
+€ ,
+& ly, 24 _—_ P =|
+
+8 Ax F3nR F— p.,
+* egy, G6xn IL
+
+d
+J(60,6,) = 0
+* Under
+Vr ee ( hha
+| \ iy € fous bem \ ks
+TE uming > Modk Peo rn better - CHigh ti)
+_ Tuming > Mod Perle
+I Pk ng > Modul Nop Pex ommecl Good W110 beac f
+T&king > modes
+C fi'gh Var lence ) m" Not Peronnel Cage
+C Ar'gh Var Ieunce.)
+M ; M, M 3
+Vdaumamng; > 42y Diaming > 9y Tatung, — 6 By
+VW Uv U
+Overhitting Perhet Modu’? Yaa thing
+
+( Low bie
+( Yow Vany'ance )
+
+Made with GOOdnotes
+(
+
+h Goodnotes
+
+, J
+
+J(@0,6,)= 1 ™ | a
+am = [ 0 - 4 ) | X (slate)?
+
+“F 5
+
+
