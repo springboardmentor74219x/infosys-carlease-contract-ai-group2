@@ -58,6 +58,14 @@ README.md
 | M3 | Negotiation Suggestions + UI | Week 6 |
 | M4 | Final Integration + Demo | Week 8 |
 
+## Architecture (Milestone 1) 
+1. User uploads car lease/loan contract PDF 
+2. Backend stores uploaded PDF 
+3. OCR service extracts text from PDF 
+4. Extracted plain text is stored for later analysis 
+   Pipeline: 
+   PDF → Upload API → OCR (Tesseract) → Text Storage 
+
 ---
 
 ## 🤝 Collaboration Rules

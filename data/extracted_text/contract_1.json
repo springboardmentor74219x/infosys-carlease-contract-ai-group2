@@ -1,0 +1,7 @@
+{
+    "contract_id": "contract_1",
+    "source_file": "contract_1.pdf",
+    "ocr_text_path": "data\\extracted_text\\contract_1.txt",
+    "text_length": 221,
+    "status": "OCR_COMPLETED"
+}
