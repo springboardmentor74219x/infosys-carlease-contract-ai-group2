@@ -1,4 +1,4 @@
-Txt
-fastapi
-uvicorn
-python-multipart
+flask
+pytesseract
+pdf2image
+pillow
