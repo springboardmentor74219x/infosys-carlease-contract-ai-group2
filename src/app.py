@@ -1,15 +1,26 @@
-from src.price_engine import get_fair_price_range
-from src.fairness import compute_fairness
-from src.classifier import extract_clauses
+from flask import Flask, request, jsonify
+from ocr_service import extract_text_from_pdf
+from storage import save_uploaded_file, get_text_output_path
 
+app = Flask(__name__)
 
-def analyze_contract(contract_price, car_price, contract_text):
-    fair_range = get_fair_price_range(car_price)
-    fairness = compute_fairness(contract_price, fair_range)
-    clauses = extract_clauses(contract_text)
+@app.route("/upload", methods=["POST"])
+def upload_contract():
+    if "file" not in request.files:
+        return jsonify({"error": "No file uploaded"}), 400
 
-    return {
-        "fair_price_range": fair_range,
-        "fairness_score": fairness,
-        "qa_issues": clauses
-    }
+    file = request.files["file"]
+
+    pdf_path = save_uploaded_file(file)
+    text_path = get_text_output_path(file.filename)
+
+    extract_text_from_pdf(pdf_path, text_path)
+
+    return jsonify({
+        "message": "Contract processed successfully",
+        "pdf_path": pdf_path,
+        "text_path": text_path
+    })
+
+if __name__ == "__main__":
+    app.run(debug=True)
