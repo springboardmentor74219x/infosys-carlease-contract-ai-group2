@@ -15,7 +15,7 @@ def upload_contract():
     text_path = get_text_output_path(file.filename)
 
     extract_text_from_pdf(pdf_path, text_path)
-
+    
     return jsonify({
         "message": "Contract processed successfully",
         "pdf_path": pdf_path,
