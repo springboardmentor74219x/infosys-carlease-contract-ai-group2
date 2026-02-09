@@ -4,6 +4,22 @@ from storage import save_uploaded_file, get_text_output_path
 
 app = Flask(__name__)
 
+@app.route("/analyze", methods=["POST"])
+def analyze():
+    data = request.get_json()
+    filename = data.get("filename")
+
+    if not filename:
+        return jsonify({"error": "filename required"}), 400
+
+    text_path = get_text_output_path(filename)
+
+    return jsonify({
+        "message": "Analysis started",
+        "text_path": text_path
+    })
+
+
 @app.route("/upload", methods=["POST"])
 def upload_contract():
     if "file" not in request.files:

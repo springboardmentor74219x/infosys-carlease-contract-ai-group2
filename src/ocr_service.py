@@ -2,7 +2,7 @@ from pdf2image import convert_from_path
 import pytesseract
 
 # Update paths if needed
-POPPLER_PATH = r"C:\poppler\poppler-25.12.0\Library\bin"
+POPPLER_PATH = r"C:\poppler\poppler-23.11.0\poppler-25.12.0\Library\bin"
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 def extract_text_from_pdf(pdf_path, output_txt_path):

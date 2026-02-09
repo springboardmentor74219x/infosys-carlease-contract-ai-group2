@@ -49,9 +49,12 @@ class _UploadScreenState extends State<UploadScreen> {
         context,
         MaterialPageRoute(builder: (_) => const DashboardScreen()),
       );
-    } else {
+    } else if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text("Upload failed")),
+        const SnackBar(
+          content: Text("Upload failed"),
+          backgroundColor: Colors.red,
+        ),
       );
     }
   }
@@ -59,25 +62,222 @@ class _UploadScreenState extends State<UploadScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Upload Contract")),
-      body: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          children: [
-            ElevatedButton(
-              onPressed: pickFile,
-              child: const Text("Pick Contract (PDF/Image)"),
-            ),
-            const SizedBox(height: 10),
-            Text(fileName ?? "No file selected"),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: isLoading ? null : uploadFile,
-              child: isLoading
-                  ? const CircularProgressIndicator(color: Colors.white)
-                  : const Text("Upload"),
-            ),
-          ],
+      appBar: AppBar(
+        title: const Text("Upload Contract"),
+        elevation: 0,
+      ),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(24),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              // Icon and heading
+              Center(
+                child: Container(
+                  width: 80,
+                  height: 80,
+                  decoration: BoxDecoration(
+                    color: const Color(0xFF0F4C75).withOpacity(0.1),
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(
+                    Icons.cloud_upload_outlined,
+                    size: 44,
+                    color: Color(0xFF0F4C75),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 24),
+
+              // Instructions
+              const Text(
+                'Upload Your Contract',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xFF0F4C75),
+                ),
+              ),
+              const SizedBox(height: 12),
+              Text(
+                'Select a PDF or image file (JPG/PNG) of your car lease or loan contract',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 14,
+                  color: Colors.grey[600],
+                  height: 1.5,
+                ),
+              ),
+              const SizedBox(height: 40),
+
+              // File picker card
+              GestureDetector(
+                onTap: pickFile,
+                child: Container(
+                  padding: const EdgeInsets.all(32),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: const Color(0xFF0F4C75).withOpacity(0.3),
+                      width: 2,
+                    ),
+                    borderRadius: BorderRadius.circular(16),
+                    color: const Color(0xFF0F4C75).withOpacity(0.05),
+                  ),
+                  child: Column(
+                    children: [
+                      Icon(
+                        Icons.file_present,
+                        size: 48,
+                        color: const Color(0xFF0F4C75).withOpacity(0.6),
+                      ),
+                      const SizedBox(height: 16),
+                      const Text(
+                        'Tap to select a file',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xFF0F4C75),
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        'PDF • JPG • PNG',
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.grey[600],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              const SizedBox(height: 24),
+
+              // Selected file display
+              if (fileName != null)
+                Container(
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: Colors.green.withOpacity(0.1),
+                    border: Border.all(
+                      color: Colors.green.withOpacity(0.3),
+                    ),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.check_circle_outlined,
+                        color: Colors.green[700],
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                              'File Selected',
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.green,
+                              ),
+                            ),
+                            Text(
+                              fileName ?? 'Unknown',
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: const TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            fileBytes = null;
+                            fileName = null;
+                          });
+                        },
+                        child: Icon(
+                          Icons.close_rounded,
+                          color: Colors.grey[600],
+                        ),
+                      ),
+                    ],
+                  ),
+                )
+              else
+                Container(
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: Colors.grey.withOpacity(0.1),
+                    border: Border.all(
+                      color: Colors.grey.withOpacity(0.3),
+                    ),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: const Row(
+                    children: [
+                      Icon(
+                        Icons.info_outline,
+                        color: Colors.grey,
+                      ),
+                      SizedBox(width: 12),
+                      Expanded(
+                        child: Text(
+                          'No file selected yet',
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.grey,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              const SizedBox(height: 40),
+
+              // Upload button
+              ElevatedButton.icon(
+                onPressed: (isLoading || fileName == null) ? null : uploadFile,
+                icon: isLoading
+                    ? const SizedBox(
+                        width: 20,
+                        height: 20,
+                        child: CircularProgressIndicator(
+                          valueColor: AlwaysStoppedAnimation(Colors.white),
+                          strokeWidth: 2,
+                        ),
+                      )
+                    : const Icon(Icons.cloud_upload_outlined),
+                label: Text(
+                  isLoading ? 'Uploading...' : 'Upload & Analyze',
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 16),
+
+              // Additional info
+              Text(
+                'Your contract will be analyzed using AI to extract details, identify risks, and provide negotiation suggestions.',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 12,
+                  color: Colors.grey[600],
+                  height: 1.6,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
