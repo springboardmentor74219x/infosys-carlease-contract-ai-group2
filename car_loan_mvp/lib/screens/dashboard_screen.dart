@@ -3,11 +3,17 @@ import 'package:flutter/material.dart';
 import 'negotiation_screen.dart';
 
 class DashboardScreen extends StatefulWidget {
-  const DashboardScreen({super.key});
+  final String fileName;
+
+  const DashboardScreen({
+    super.key,
+    required this.fileName,
+  });
 
   @override
   State<DashboardScreen> createState() => _DashboardScreenState();
 }
+
 
 class _DashboardScreenState extends State<DashboardScreen>
     with SingleTickerProviderStateMixin {
@@ -87,7 +93,10 @@ class _DashboardScreenState extends State<DashboardScreen>
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (_) => const NegotiationScreen()),
+                      MaterialPageRoute(
+                           builder: (_) => NegotiationScreen(fileName: widget.fileName),
+                                      ),
+
                     );
                   },
                 ),

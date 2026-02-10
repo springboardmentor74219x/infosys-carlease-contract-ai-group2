@@ -2,11 +2,17 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class NegotiationScreen extends StatefulWidget {
-  const NegotiationScreen({super.key});
+  final String fileName;
+
+  const NegotiationScreen({
+    super.key,
+    required this.fileName,
+  });
 
   @override
   State<NegotiationScreen> createState() => _NegotiationScreenState();
 }
+
 
 class _NegotiationScreenState extends State<NegotiationScreen>
     with SingleTickerProviderStateMixin {
@@ -15,15 +21,105 @@ class _NegotiationScreenState extends State<NegotiationScreen>
 
   @override
   void initState() {
-    controller = AnimationController(vsync: this, duration: const Duration(milliseconds: 700));
+    controller = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 700),
+    );
     slide = Tween(begin: const Offset(0, .3), end: Offset.zero)
         .animate(CurvedAnimation(parent: controller, curve: Curves.easeOutExpo));
     controller.forward();
     super.initState();
   }
 
+  // 🔥 AI Negotiation Logic (demo-ready)
+  Map<String, dynamic> getNegotiationData() {
+    final name = widget.fileName.toLowerCase();
+
+    if (name.contains("high")) {
+      return {
+        "apr": "14.8%",
+        "tenure": "72 mo",
+        "risk": "High",
+        "cards": [
+          {
+            "title": "High Interest Risk",
+            "desc": "APR significantly exceeds market average",
+            "icon": Icons.trending_up,
+            "color": Colors.redAccent
+          },
+          {
+            "title": "Negotiation Tip",
+            "desc": "Ask for a reduced interest rate or shorter tenure",
+            "icon": Icons.handshake,
+            "color": Colors.orangeAccent
+          },
+          {
+            "title": "Penalty Clause",
+            "desc": "Early closure penalties detected",
+            "icon": Icons.warning,
+            "color": Colors.redAccent
+          },
+        ]
+      };
+    } else if (name.contains("lease")) {
+      return {
+        "apr": "11.2%",
+        "tenure": "48 mo",
+        "risk": "Medium",
+        "cards": [
+          {
+            "title": "Moderate APR",
+            "desc": "APR slightly above recommended range",
+            "icon": Icons.trending_flat,
+            "color": Colors.orangeAccent
+          },
+          {
+            "title": "Negotiation Tip",
+            "desc": "Request reduced processing and documentation fees",
+            "icon": Icons.handshake,
+            "color": Colors.cyanAccent
+          },
+          {
+            "title": "Safe Tenure",
+            "desc": "Lease duration is within acceptable limits",
+            "icon": Icons.verified,
+            "color": Colors.greenAccent
+          },
+        ]
+      };
+    } else {
+      return {
+        "apr": "9.1%",
+        "tenure": "36 mo",
+        "risk": "Low",
+        "cards": [
+          {
+            "title": "Low Risk Contract",
+            "desc": "APR is competitive with market standards",
+            "icon": Icons.verified,
+            "color": Colors.greenAccent
+          },
+          {
+            "title": "Negotiation Tip",
+            "desc": "Try negotiating add-on benefits or cashback",
+            "icon": Icons.handshake,
+            "color": Colors.cyanAccent
+          },
+          {
+            "title": "Safe Clause",
+            "desc": "No risky penalties detected",
+            "icon": Icons.security,
+            "color": Colors.greenAccent
+          },
+        ]
+      };
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
+    final data = getNegotiationData();
+
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
@@ -42,20 +138,32 @@ class _NegotiationScreenState extends State<NegotiationScreen>
                 padding: const EdgeInsets.all(20),
                 child: Column(
                   children: [
-                    const Text("AI Contract Intelligence",
-                        style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold, color: Colors.white)),
+                    const Text(
+                      "AI Contract Intelligence",
+                      style: TextStyle(
+                        fontSize: 26,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
                     const SizedBox(height: 8),
                     Chip(
-                      label: const Text("AI Processing", style: TextStyle(color: Color.fromARGB(255, 1, 0, 0))),
-                      backgroundColor: Colors.cyanAccent.withOpacity(.2),
-                      avatar: const Icon(Icons.auto_awesome, color: Colors.cyanAccent),
+                      label: const Text(
+                        "AI Negotiation Ready",
+                        style: TextStyle(color: Colors.black),
+                      ),
+                      backgroundColor: Colors.cyanAccent,
+                      avatar: const Icon(Icons.auto_awesome),
                     )
                   ],
                 ),
               ),
 
-              // STEPPER BAR
-              const LinearProgressIndicator(value: .85, color: Colors.cyanAccent, backgroundColor: Colors.white12),
+              const LinearProgressIndicator(
+                value: .95,
+                color: Colors.cyanAccent,
+                backgroundColor: Colors.white12,
+              ),
 
               const SizedBox(height: 20),
 
@@ -66,18 +174,21 @@ class _NegotiationScreenState extends State<NegotiationScreen>
                     padding: const EdgeInsets.all(20),
                     children: [
 
-                      _glassCard("Interest Risk", "APR is higher than market average", Icons.trending_up, Colors.redAccent),
-                      _glassCard("Negotiation Tip", "Request reduced processing fees", Icons.handshake, Colors.cyanAccent),
-                      _glassCard("Safe Clause", "Tenure length is within safe range", Icons.verified, Colors.greenAccent),
+                      for (var card in data["cards"])
+                        _glassCard(
+                          card["title"],
+                          card["desc"],
+                          card["icon"],
+                          card["color"],
+                        ),
 
                       const SizedBox(height: 20),
 
-                      // MINI ANALYTICS
                       Row(
                         children: [
-                          _miniTile("APR", "11.4%", Icons.percent),
-                          _miniTile("Tenure", "60 mo", Icons.schedule),
-                          _miniTile("Risk", "Medium", Icons.warning),
+                          _miniTile("APR", data["apr"], Icons.percent),
+                          _miniTile("Tenure", data["tenure"], Icons.schedule),
+                          _miniTile("Risk", data["risk"], Icons.warning),
                         ],
                       ),
 
@@ -88,11 +199,16 @@ class _NegotiationScreenState extends State<NegotiationScreen>
                           message: "Return to dashboard",
                           child: ElevatedButton.icon(
                             icon: const Icon(Icons.arrow_back),
-                            label: const Text("Go Back"),
+                            label: const Text("Back to Dashboard"),
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.deepPurpleAccent,
-                              padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
-                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 40,
+                                vertical: 15,
+                              ),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30),
+                              ),
                               elevation: 12,
                               shadowColor: Colors.cyanAccent,
                             ),
@@ -122,18 +238,32 @@ class _NegotiationScreenState extends State<NegotiationScreen>
           decoration: BoxDecoration(
             color: Colors.white.withOpacity(.07),
             borderRadius: BorderRadius.circular(20),
-            boxShadow: [BoxShadow(color: color.withOpacity(.4), blurRadius: 20)],
+            boxShadow: [
+              BoxShadow(color: color.withOpacity(.4), blurRadius: 20)
+            ],
           ),
           child: Row(
             children: [
               Icon(icon, color: color, size: 32),
               const SizedBox(width: 14),
               Expanded(
-                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  Text(title, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-                  const SizedBox(height: 4),
-                  Text(desc, style: const TextStyle(color: Colors.white70)),
-                ]),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      title,
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      desc,
+                      style: const TextStyle(color: Colors.white70),
+                    ),
+                  ],
+                ),
               )
             ],
           ),
@@ -154,7 +284,13 @@ class _NegotiationScreenState extends State<NegotiationScreen>
               Icon(icon, color: Colors.cyanAccent),
               const SizedBox(height: 6),
               Text(title, style: const TextStyle(color: Colors.white70)),
-              Text(value, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+              Text(
+                value,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ],
           ),
         ),

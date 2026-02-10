@@ -22,11 +22,24 @@ class _UploadScreenState extends State<UploadScreen>
     super.initState();
   }
 
-  Future<void> _pickPdf(BuildContext context) async {
-    final result = await FilePicker.platform.pickFiles(type: FileType.custom, allowedExtensions: ['pdf']);
-    if (result == null) return;
-    Navigator.push(context, MaterialPageRoute(builder: (_) => const DashboardScreen()));
-  }
+Future<void> _pickPdf(BuildContext context) async {
+  final result = await FilePicker.platform.pickFiles(
+    type: FileType.custom,
+    allowedExtensions: ['pdf'],
+  );
+
+  if (result == null) return;
+
+  final String fileName = result.files.single.name;
+
+  Navigator.push(
+    context,
+    MaterialPageRoute(
+      builder: (_) => DashboardScreen(fileName: fileName),
+    ),
+  );
+}
+
 
   @override
   Widget build(BuildContext context) {

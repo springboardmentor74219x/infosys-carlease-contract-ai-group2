@@ -1,0 +1,7 @@
+{
+  "lease_term": "36 months",
+  "monthly_payment": "INR 18,500",
+  "late_fee": "INR 500 per day",
+  "maintenance_interval": "Every 10,000 km",
+  "early_termination_fee": "3 months lease amount"
+}
